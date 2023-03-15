@@ -1,5 +1,19 @@
-CREATE TABLE IF NOT EXISTS family(
-    family_id BIGSERIAL NOT NULL PRIMARY KEY
+CREATE TABLE IF NOT EXISTS caretaker(
+    caretaker_id BIGSERIAL PRIMARY KEY
+);
+
+CREATE TABLE IF NOT EXISTS help_group(
+    help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
+    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id),
+    poverty_level INT
+);
+
+CREATE TABLE IF NOT EXISTS donor(
+    donor_id BIGSERIAL NOT NULL PRIMARY KEY,
+    help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
+    pack_count INT NOT NULL,
+    donations_sum money NOT NULL,
+    points INT
 );
 
 CREATE TABLE IF NOT EXISTS person(
@@ -7,7 +21,9 @@ CREATE TABLE IF NOT EXISTS person(
     pesel CHAR(11) NOT NULL,
     forename TEXT NOT NULL,
     surname TEXT NOT NULL,
-    adress TEXT NOT NULL,
+    address TEXT NOT NULL,
     birth DATE NOT NULL,
-    family_ref_id BIGINT REFERENCES family(family_id)
+    donor_ref_id BIGINT REFERENCES donor(donor_id),
+    help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
+    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
 );
