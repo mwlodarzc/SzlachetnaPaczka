@@ -16,6 +16,14 @@ CREATE TABLE IF NOT EXISTS donor(
     points INT
 );
 
+CREATE TABLE IF NOT EXISTS user_data(
+    user_data_id BIGSERIAL PRIMARY KEY,
+    email_address TEXT,
+    password_hash CHAR(33),
+    phone_number CHAR(11),
+    modification_date DATE
+);
+
 CREATE TABLE IF NOT EXISTS person(
     person_id BIGSERIAL PRIMARY KEY,
     pesel CHAR(11) NOT NULL,
@@ -25,5 +33,6 @@ CREATE TABLE IF NOT EXISTS person(
     birth DATE NOT NULL,
     donor_ref_id BIGINT REFERENCES donor(donor_id),
     help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
-    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
+    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id),
+    user_data_ref_id BIGINT REFERENCES user_data(user_data_id)
 );
