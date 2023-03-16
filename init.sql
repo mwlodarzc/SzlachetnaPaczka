@@ -1,3 +1,11 @@
+CREATE TABLE IF NOT EXISTS user_data(
+    user_data_id BIGSERIAL PRIMARY KEY,
+    email_address TEXT,
+    password_hash CHAR(33),
+    phone_number CHAR(11),
+    modification_date DATE
+);
+
 CREATE TABLE IF NOT EXISTS caretaker(
     caretaker_id BIGSERIAL PRIMARY KEY
 );
@@ -8,20 +16,24 @@ CREATE TABLE IF NOT EXISTS help_group(
     poverty_level INT
 );
 
+CREATE TABLE IF NOT EXISTS product(
+    product_id BIGSERIAL PRIMARY KEY,
+    kind VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS needs(
+    need_id BIGSERIAL PRIMARY KEY,
+    need_help_group_ref BIGINT REFERENCES help_group(help_group_id),
+    need_products_ref BIGINT REFERENCES product(product_id),
+    count INT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS donor(
     donor_id BIGSERIAL NOT NULL PRIMARY KEY,
     help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
     pack_count INT NOT NULL,
     donations_sum money NOT NULL,
     points INT
-);
-
-CREATE TABLE IF NOT EXISTS user_data(
-    user_data_id BIGSERIAL PRIMARY KEY,
-    email_address TEXT,
-    password_hash CHAR(33),
-    phone_number CHAR(11),
-    modification_date DATE
 );
 
 CREATE TABLE IF NOT EXISTS person(
