@@ -12,8 +12,9 @@ CREATE TABLE IF NOT EXISTS caretaker(
 
 CREATE TABLE IF NOT EXISTS help_group(
     help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
-    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id),
-    poverty_level INT
+    poverty_level INT,
+    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
+
 );
 
 CREATE TABLE IF NOT EXISTS product(
@@ -23,17 +24,18 @@ CREATE TABLE IF NOT EXISTS product(
 
 CREATE TABLE IF NOT EXISTS needs(
     need_id BIGSERIAL PRIMARY KEY,
-    need_help_group_ref BIGINT REFERENCES help_group(help_group_id),
-    need_products_ref BIGINT REFERENCES product(product_id),
-    count INT NOT NULL
+    count INT NOT NULL,
+    needs_help_group_ref BIGINT REFERENCES help_group(help_group_id),
+    needs_products_ref BIGINT REFERENCES product(product_id)
+
 );
 
 CREATE TABLE IF NOT EXISTS donor(
     donor_id BIGSERIAL NOT NULL PRIMARY KEY,
-    help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
     pack_count INT NOT NULL,
     donations_sum money NOT NULL,
-    points INT
+    points INT,
+    donor_help_group_ref_id BIGINT REFERENCES help_group(help_group_id)
 );
 
 CREATE TABLE IF NOT EXISTS person(
@@ -43,8 +45,8 @@ CREATE TABLE IF NOT EXISTS person(
     surname TEXT NOT NULL,
     address TEXT NOT NULL,
     birth DATE NOT NULL,
-    donor_ref_id BIGINT REFERENCES donor(donor_id),
-    help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
-    caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id),
-    user_data_ref_id BIGINT REFERENCES user_data(user_data_id)
+    person_donor_ref_id BIGINT REFERENCES donor(donor_id),
+    person_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
+    person_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id),
+    person_user_data_ref_id BIGINT REFERENCES user_data(user_data_id)
 );
