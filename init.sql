@@ -17,9 +17,12 @@ CREATE TABLE IF NOT EXISTS caretaker(
 
 );
 
+DROP TYPE IF EXISTS LEVEL;
+CREATE TYPE LEVEL AS ENUM ('low','mid','high')  ;
+
 CREATE TABLE IF NOT EXISTS help_group(
     help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
-    poverty_level INT,
+    poverty_level LEVEL,
     help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) UNIQUE
 );
 
@@ -42,6 +45,13 @@ CREATE TABLE IF NOT EXISTS donor(
     donations_sum money NOT NULL,
     points INT,
     donor_help_group_ref_id BIGINT REFERENCES help_group(help_group_id)
+);
+CREATE TABLE IF NOT EXISTS donations(
+    donation_id BIGSERIAL PRIMARY KEY,
+    "date" DATE NOT NULL,
+    note TEXT,
+    donations_donor_ref_id BIGINT REFERENCES donor(donor_id),
+    donations_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) NULL
 );
 
 CREATE TABLE IF NOT EXISTS person(
