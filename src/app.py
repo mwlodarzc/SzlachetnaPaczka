@@ -22,7 +22,19 @@ print(
         "2022-04-29",
     )
 )
-print(_db.select_user(t))
+print(
+    p := _db.add_person(
+        "81010200141",
+        "Łukasz",
+        "Brzęczyszczykiewicz",
+        "Akacjowa 77 Wrocław",
+        "1987-07-01",
+    )
+)
+print(_db.select("user_data", t))
+print(_db.select("person", p))
+_db.update("person", p, person_user_data_ref_id=t)
+print(_db.select("person", p))
 
 
 @app.route("/")

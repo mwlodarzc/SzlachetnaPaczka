@@ -27,8 +27,36 @@ class Database:
     def __del__(self):
         self.connector.close()
 
+    def select(self, table: str, id: int) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table} WHERE {table}_id={id}")
+        tmp = cursor.fetchone()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+
+    def update(self, table: str, id: int, **kwargs):
+        for kw in kwargs:
+            cursor = self.connector.cursor()
+            cursor.execute(
+                f"UPDATE {table} SET {kw} = {kwargs[kw]} WHERE {table}_id = {id};"
+            )
+            cursor.close()
+            self.connector.commit()
+
+    def delete(self, table: str, id: int):
+        cursor = self.connector.cursor()
+        cursor.execute(f"DELETE FROM {table} WHERE {table}_id = {id};")
+        cursor.close()
+        self.connector.commit()
+
     def add_user(
-        self, email_address, phone_number, password_hash, modification_date, join_date
+        self,
+        email_address: str,
+        phone_number: str,
+        password_hash: str,
+        modification_date: str,
+        join_date: str,
     ):
         with self.connector.cursor() as cur:
             cur.execute(
@@ -46,48 +74,84 @@ class Database:
             cur.close()
             return tmp
 
-    def select_idx(self, table: str, id: int) -> tuple:
-        cursor = self.connector.cursor()
-        cursor.execute(f"SELECT * FROM {table} user_data_id={id}")
-        tmp = cursor.fetchone()
-        cursor.close()
+    def add_caretaker(
+        self,
+        donation_place: str,
+        car_owner: str,
+        active_hours_start: str,
+        active_hours_end: str,
+    ):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO caretaker (donation_place,car_owner, active_hours_start,active_hours) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
+            (donation_place, car_owner, active_hours_start, active_hours_end),
+        )
+        tmp = cur.fetchone()[0]
         self.connector.commit()
+        cur.close()
         return tmp
 
-    # def add_caretaker(
-    #     self, donation_place, active_hours_start, active_hours_end, car_owner=False
-    # ):
-    #     self.cursor.execute(
-    #         f"INSERT INTO caretaker (donation_place,active_hours_start,active_hours) VALUES ({donation_place},{car_owner},{active_hours_start},{active_hours_end})"
-    #     )
-    #     self.connector.commit()
+    def add_help_group(self, poverty_level: str):
+        # test
+        assert poverty_level not in self.LEVEL
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO help_group VALUES (%s) RETURNING help_group_id", poverty_level
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
 
-    # def add_help_group(self, poverty_level: str):
-    #     # test
-    #     assert poverty_level not in self.LEVEL
-    #     self.cursor.execute(f"INSERT INTO help_group VALUES ({poverty_level}))")
-    #     self.connector.commit()
+    def add_product(self, kind: str):
+        cur = self.connector.cursor()
+        self.cursor.execute(
+            "INSERT INTO product VALUES (%s) RETURNING product_id;", kind
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
 
-    # def add_product(self, kind):
-    #     self.cursor.execute(f"INSERT INTO product VALUES ({kind}))")
-    #     self.connector.commit()
+    def add_needs(self, count: int):
+        cur = self.connector.cursor()
+        cur.execute("INSERT INTO needs (count) VALUES (%s) RETURNING needs_id;", count)
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
 
-    # def add_needs(self, count: int):
-    #     self.cursor.execute(f"INSERT INTO needs VALUES ({count}))")
-    #     self.connector.commit()
+    def add_donor(self, pack_count: int, donations_sum: int, points: int):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO donor (pack_count, donations_sum, points) VALUES (%s,%s,%s) RETURNING donor_id;",
+            (pack_count, donations_sum, points),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
 
-    # def add_donor(self, pack_count: int, donations_sum: int, points: int):
-    #     self.cursor.execute(
-    #         f"INSERT INTO donor VALUES ({pack_count},{donations_sum},{points}))"
-    #     )
-    #     self.connector.commit()
+    def add_donations(self, date: str, note: str):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO donations (date, note) VALUES (%s,%s) RETURNING donations_id;",
+            (date, note),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
 
-    # def add_donations(self, date, note):
-    #     self.cursor.execute(f"INSERT INTO donations VALUES ({date},{note}))")
-    #     self.connector.commit()
-
-    # def add_person(self, pesel, forename, surname, address, birth):
-    #     self.cursor.execute(
-    #         f"INSERT INTO person VALUES ({pesel},{forename},{surname},{address},{birth}"
-    #     )
-    #     self.connector.commit()
+    def add_person(
+        self, pesel: str, forename: str, surname: str, address: str, birth: str
+    ):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO person (pesel, forename, surname, address, birth) VALUES (%s,%s,%s,%s,%s) RETURNING person_id;",
+            (pesel, forename, surname, address, birth),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
