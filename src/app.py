@@ -31,10 +31,10 @@ print(
         "1987-07-01",
     )
 )
-print(_db.select("user_data", t))
-print(_db.select("person", p))
+print(_db.select_id("user_data", t))
+print(_db.select_id("person", p))
 _db.update("person", p, person_user_data_ref_id=t)
-print(_db.select("person", p))
+print(_db.select_id("person", p))
 
 
 @app.route("/")

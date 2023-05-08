@@ -27,7 +27,14 @@ class Database:
     def __del__(self):
         self.connector.close()
 
-    def select(self, table: str, id: int) -> tuple:
+    def register_account(
+        self,
+        user_info: tuple,
+    ):
+        ...
+        # add_user(self, user_info)
+
+    def select_id(self, table: str, id: int) -> tuple:
         cursor = self.connector.cursor()
         cursor.execute(f"SELECT * FROM {table} WHERE {table}_id={id}")
         tmp = cursor.fetchone()
