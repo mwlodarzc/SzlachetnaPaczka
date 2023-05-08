@@ -3,13 +3,11 @@ SHELL := /bin/bash
 .PHONY: run clean venv
 
 setup: requirements.txt
-		source venv/bin/activate
-		sudo apt-get install postgresql-15 postgresql-contrib-15 postgresql-client-15 postgresql-server-dev-15
-		export PGCluster=15/main
+		sudo apt-get install postgresql-12 postgresql-contrib-12 postgresql-client-12 postgresql-server-dev-12
+		export PGCluster=12/main
 		pip install -r requirements.txt
 
 run: venv setup
-		sudo service postgresql start
 		python3 src/app.py
 
 clean:
