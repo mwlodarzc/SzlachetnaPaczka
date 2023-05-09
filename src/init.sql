@@ -1,29 +1,26 @@
 CREATE TABLE IF NOT EXISTS user_data(
     user_data_id BIGSERIAL PRIMARY KEY,
-    email_address TEXT,
-    phone_number CHAR(11),
-    password_hash CHAR(33),
-    modification_date DATE,
-    join_date DATE
+    email_address TEXT NOT NULL,
+    phone_number CHAR(11) NOT NULL,
+    password_hash CHAR(33) NOT NULL,
+    modification_date DATE NOT NULL,
+    join_date DATE NOT NULL
 
 );
 
 CREATE TABLE IF NOT EXISTS caretaker(
     caretaker_id BIGSERIAL PRIMARY KEY,
     donation_place TEXT NOT NULL,
-    car_owner BOOLEAN,
-    active_hours_start TIME,
-    active_hours_end TIME
-
+    car_owner BOOLEAN NOT NULL,
+    active_hours_start TIME NOT NULL,
+    active_hours_end TIME NOT NULL
 );
 
-DROP TYPE IF EXISTS LEVEL;
-CREATE TYPE LEVEL AS ENUM ('low','mid','high')  ;
 
 CREATE TABLE IF NOT EXISTS help_group(
     help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
-    poverty_level LEVEL,
-    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) UNIQUE
+    poverty_level INT,
+    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
 );
 
 CREATE TABLE IF NOT EXISTS product(
@@ -32,10 +29,10 @@ CREATE TABLE IF NOT EXISTS product(
 );
 
 CREATE TABLE IF NOT EXISTS needs(
-    need_id BIGSERIAL PRIMARY KEY,
+    needs_id BIGSERIAL PRIMARY KEY,
     count INT NOT NULL,
-    needs_help_group_ref BIGINT REFERENCES help_group(help_group_id),
-    needs_products_ref BIGINT REFERENCES product(product_id)
+    needs_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
+    needs_products_ref_id BIGINT REFERENCES product(product_id)
 
 );
 
@@ -43,13 +40,13 @@ CREATE TABLE IF NOT EXISTS donor(
     donor_id BIGSERIAL NOT NULL PRIMARY KEY,
     pack_count INT NOT NULL,
     donations_sum money NOT NULL,
-    points INT,
+    points INT NOT NULL,
     donor_help_group_ref_id BIGINT REFERENCES help_group(help_group_id)
 );
 CREATE TABLE IF NOT EXISTS donations(
-    donation_id BIGSERIAL PRIMARY KEY,
+    donations_id BIGSERIAL PRIMARY KEY,
     "date" DATE NOT NULL,
-    note TEXT,
+    note TEXT NOT NULL,
     donations_donor_ref_id BIGINT REFERENCES donor(donor_id),
     donations_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) NULL
 );
