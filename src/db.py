@@ -50,6 +50,17 @@ class Database:
         self.connector.commit()
         return tmp
 
+    def join(self, join_type: str, left_table: str, right_table: str):
+        assert join_type.upper() in {"INNER", "RIGHT", "LEFT", "FULL"}
+        cur = self.connector.cursor()
+        cur.execute(
+            f"SELECT * FROM {left_table} {join_type} JOIN {right_table} ON {left_table}_{right_table}_ref_id = {right_table}_id"
+        )
+        tmp = cur.fetchall()
+        self.connector.commit()
+        cur.close()
+        return tmp
+
     def update(self, table: str, id: int, **kwargs):
         cursor = self.connector.cursor()
         for kw in kwargs:

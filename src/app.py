@@ -13,6 +13,8 @@ app = Flask(
 db = Database()
 MockData.load(db)
 MockData.show(db)
+print(*db.join("inner", "person", "user_data"), sep="\n")
+print(*db.join("full", "person", "help_group"), sep="\n")
 
 
 @app.route("/")
