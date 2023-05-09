@@ -1,5 +1,6 @@
 import os
 import psycopg2
+from psycopg2.sql import SQL
 from config import config
 
 
@@ -27,29 +28,36 @@ class Database:
     def __del__(self):
         self.connector.close()
 
-    def register_account(
-        self,
-        user_info: tuple,
-    ):
-        ...
-        # add_user(self, user_info)
+    # def register_account(
+    #     self,
+    #     user_info: tuple,
+    # ):
+    #     ...
+    # add_user(self, user_info)
+    def select_all(self, table: str) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table};")
+        tmp = cursor.fetchall()
+        cursor.close()
+        self.connector.commit()
+        return tmp
 
     def select_id(self, table: str, id: int) -> tuple:
         cursor = self.connector.cursor()
-        cursor.execute(f"SELECT * FROM {table} WHERE {table}_id={id}")
+        cursor.execute(f"SELECT * FROM {table} WHERE {table}_id={id};")
         tmp = cursor.fetchone()
         cursor.close()
         self.connector.commit()
         return tmp
 
     def update(self, table: str, id: int, **kwargs):
+        cursor = self.connector.cursor()
         for kw in kwargs:
-            cursor = self.connector.cursor()
             cursor.execute(
                 f"UPDATE {table} SET {kw} = {kwargs[kw]} WHERE {table}_id = {id};"
             )
-            cursor.close()
-            self.connector.commit()
+        cursor.close()
+        self.connector.commit()
 
     def delete(self, table: str, id: int):
         cursor = self.connector.cursor()
@@ -57,7 +65,7 @@ class Database:
         cursor.close()
         self.connector.commit()
 
-    def add_user(
+    def add_user_data(
         self,
         email_address: str,
         phone_number: str,
@@ -68,13 +76,13 @@ class Database:
         with self.connector.cursor() as cur:
             cur.execute(
                 "INSERT INTO user_data (email_address,phone_number,password_hash,modification_date,join_date) VALUES(%s,%s,%s,%s,%s) RETURNING user_data_id;",
-                (
+                [
                     email_address,
                     phone_number,
                     password_hash,
                     modification_date,
                     join_date,
-                ),
+                ],
             )
             tmp = cur.fetchone()[0]
             self.connector.commit()
@@ -90,8 +98,8 @@ class Database:
     ):
         cur = self.connector.cursor()
         cur.execute(
-            "INSERT INTO caretaker (donation_place,car_owner, active_hours_start,active_hours) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
-            (donation_place, car_owner, active_hours_start, active_hours_end),
+            "INSERT INTO caretaker (donation_place,car_owner, active_hours_start,active_hours_end) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
+            [donation_place, car_owner, active_hours_start, active_hours_end],
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -99,11 +107,11 @@ class Database:
         return tmp
 
     def add_help_group(self, poverty_level: str):
-        # test
         assert poverty_level not in self.LEVEL
         cur = self.connector.cursor()
         cur.execute(
-            "INSERT INTO help_group VALUES (%s) RETURNING help_group_id", poverty_level
+            "INSERT INTO help_group (poverty_level) VALUES (%s) RETURNING help_group_id",
+            [poverty_level],
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -112,8 +120,8 @@ class Database:
 
     def add_product(self, kind: str):
         cur = self.connector.cursor()
-        self.cursor.execute(
-            "INSERT INTO product VALUES (%s) RETURNING product_id;", kind
+        cur.execute(
+            SQL("INSERT INTO product (kind) VALUES (%s) RETURNING product_id;"), [kind]
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -122,7 +130,9 @@ class Database:
 
     def add_needs(self, count: int):
         cur = self.connector.cursor()
-        cur.execute("INSERT INTO needs (count) VALUES (%s) RETURNING needs_id;", count)
+        cur.execute(
+            "INSERT INTO needs (count) VALUES (%s) RETURNING needs_id;", [count]
+        )
         tmp = cur.fetchone()[0]
         self.connector.commit()
         cur.close()
@@ -132,7 +142,7 @@ class Database:
         cur = self.connector.cursor()
         cur.execute(
             "INSERT INTO donor (pack_count, donations_sum, points) VALUES (%s,%s,%s) RETURNING donor_id;",
-            (pack_count, donations_sum, points),
+            (pack_count, float(donations_sum), points),
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
