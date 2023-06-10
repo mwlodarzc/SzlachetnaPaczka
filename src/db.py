@@ -19,7 +19,7 @@ class Database:
         #     # print(db_version)
         #     # cursor.close()
         cursor = self.connector.cursor()
-        cursor.execute(open("src/drop.sql", "r").read())
+        # cursor.execute(open("src/drop.sql", "r").read())
         cursor.execute(open("src/init.sql", "r").read())
         cursor.close()
         self.connector.commit()
@@ -41,15 +41,28 @@ class Database:
         cursor.close()
         self.connector.commit()
         return tmp
-
-    def update(self, table: str, id: int, **kwargs):
-        for kw in kwargs:
-            cursor = self.connector.cursor()
-            cursor.execute(
-                f"UPDATE {table} SET {kw} = {kwargs[kw]} WHERE {table}_id = {id};"
-            )
-            cursor.close()
-            self.connector.commit()
+    
+    def select_ref_id(self, table: str, refTable: str, refId: int) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table} WHERE {table}_{refTable}_ref_id={refId}")
+        tmp = cursor.fetchone()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
+    def select_email_passwd(self, email_address: str, password_hash: str) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM user_data WHERE email_address='{email_address}' AND password_hash='{password_hash}'")
+        tmp = cursor.fetchone()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
+    def update(self, table: str, id: int, record: str, content: str):
+        cursor = self.connector.cursor()
+        cursor.execute(f"UPDATE {table} SET {record} = '{content}' WHERE {table}_id = {id};")
+        cursor.close()
+        self.connector.commit()
 
     def delete(self, table: str, id: int):
         cursor = self.connector.cursor()
@@ -84,7 +97,7 @@ class Database:
     def add_caretaker(
         self,
         donation_place: str,
-        car_owner: str,
+        car_owner: bool,
         active_hours_start: str,
         active_hours_end: str,
     ):
@@ -92,6 +105,20 @@ class Database:
         cur.execute(
             "INSERT INTO caretaker (donation_place,car_owner, active_hours_start,active_hours) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
             (donation_place, car_owner, active_hours_start, active_hours_end),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
+    
+    def add_caretaker(
+        self,
+    ):
+        car_owner = False
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO caretaker (car_owner) VALUES (%s) RETURNING caretaker_id;",
+            [car_owner],
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -157,6 +184,45 @@ class Database:
         cur.execute(
             "INSERT INTO person (pesel, forename, surname, address, birth) VALUES (%s,%s,%s,%s,%s) RETURNING person_id;",
             (pesel, forename, surname, address, birth),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
+    
+    def add_person(
+        self, forename: str, surname: str,
+    ):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO person (forename, surname) VALUES (%s,%s) RETURNING person_id;",
+            (forename, surname),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
+
+    def add_person_caretaker(
+        self, forename: str, surname: str, person_caretaker_ref_id: int, person_user_data_ref_id: int
+    ):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO person (forename, surname, person_caretaker_ref_id, person_user_data_ref_id) VALUES (%s,%s,%s,%s) RETURNING person_id;",
+            (forename, surname, person_caretaker_ref_id, person_user_data_ref_id),
+        )
+        tmp = cur.fetchone()[0]
+        self.connector.commit()
+        cur.close()
+        return tmp
+    
+    def add_person_donor(
+        self, forename: str, surname: str, person_donor_ref_id: int, person_user_data_ref_id: int
+    ):
+        cur = self.connector.cursor()
+        cur.execute(
+            "INSERT INTO person (forename, surname, person_donor_ref_id, person_user_data_ref_id) VALUES (%s,%s,%s,%s) RETURNING person_id;",
+            (forename, surname, person_donor_ref_id, person_user_data_ref_id),
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()

@@ -5,18 +5,21 @@ CREATE TABLE IF NOT EXISTS user_data(
     password_hash CHAR(33) NOT NULL,
     modification_date DATE NOT NULL,
     join_date DATE NOT NULL
-
 );
-CREATE TYPE LEVEL AS ENUM ('low','mid','high') ;
+
+DO $$ BEGIN
+    CREATE TYPE LEVEL AS ENUM ('low','mid','high');
+EXCEPTION
+    WHEN duplicate_object THEN null;
+END $$;
 
 CREATE TABLE IF NOT EXISTS caretaker(
     caretaker_id BIGSERIAL PRIMARY KEY,
-    donation_place TEXT NOT NULL,
-    car_owner BOOLEAN NOT NULL,
-    active_hours_start TIME NOT NULL,
-    active_hours_end TIME NOT NULL
+    donation_place TEXT,
+    car_owner BOOLEAN,
+    active_hours_start TIME,
+    active_hours_end TIME
 );
-
 
 CREATE TABLE IF NOT EXISTS help_group(
     help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
@@ -44,6 +47,7 @@ CREATE TABLE IF NOT EXISTS donor(
     points INT NOT NULL,
     donor_help_group_ref_id BIGINT REFERENCES help_group(help_group_id)
 );
+
 CREATE TABLE IF NOT EXISTS donations(
     donation_id BIGSERIAL PRIMARY KEY,
     "date" DATE NOT NULL,
@@ -54,11 +58,11 @@ CREATE TABLE IF NOT EXISTS donations(
 
 CREATE TABLE IF NOT EXISTS person(
     person_id BIGSERIAL PRIMARY KEY,
-    pesel CHAR(11) NOT NULL,
+    pesel CHAR(11),
     forename TEXT NOT NULL,
     surname TEXT NOT NULL,
-    address TEXT NOT NULL,
-    birth DATE NOT NULL,
+    address TEXT,
+    birth DATE,
     person_donor_ref_id BIGINT REFERENCES donor(donor_id),
     person_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
     person_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) UNIQUE,

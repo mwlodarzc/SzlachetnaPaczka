@@ -5,11 +5,10 @@
     overflow-x: hidden;
 }
 
-body {
+.wrapper {
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    background-color: #1e1d23;
-    font-size: 24px;
+    color: var(--green-lighter);
+    background-color: var(--green-lighter);
 }
 
 nav ul {
@@ -23,19 +22,21 @@ nav ul {
     height: 70px;
     right: 0;
     list-style: none;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--green-light);
     transition: transform 0s;
+    overflow-y: hidden;
 }
 
 nav a {
     display: block;
     padding: 10px 10px;
-    color: #333;
+    color: var(--black);
+    font-size: 24px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #8d8d8d;
+    color: var(--green-lighter);
 }
 
 .burger {
@@ -53,40 +54,63 @@ nav a:hover {
     transition: transform .3s;
 }
 
-.close-btn {
-    color: #000000;
-    cursor: pointer;
-    font-size: 48px;
-    user-select: none;
+.fa-bars {
+    color: #fff;
 }
 
-.open-btn {
-    color: #ffffff;
-    cursor: pointer;
-    user-select: none;
+.fa-times {
+    color: #333;
 }
 
-.active {
-    width: 350px;
+@media only screen and (max-width: 1199px) {
+    .burger {
+        display: block;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 10px 20px;
+        font-size: 46px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        transition: transform .3s;
+    }
+
+    nav ul {
+        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 9;
+        padding-top: 50px;
+        position: fixed;
+        height: 100%;
+        width: 0;
+        right: 0;
+        list-style: none;
+        background-color: rgb(255, 255, 255);
+        transition: transform .3s;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 30px;
+        color: #333;
+        font-size: 28px;
+        text-decoration: none;
+    }
+
+    .active {
+        width: 350px;
+    }
 }
 
-.hide {
-    width: 0px;
-}
-
-.invisible {
-    display: none;
-}
-
-/* tablets and desktop */
-@media only screen and (min-width: 768px) {}
-
-/* phones */
 @media only screen and (max-width: 767px) {
     .burger {
         display: block;
         z-index: 10;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         padding: 10px 20px;
@@ -104,20 +128,25 @@ nav a:hover {
         justify-content: flex-start;
         z-index: 9;
         padding-top: 50px;
-        position: absolute;
-        height: 100vh;
+        position: fixed;
+        height: 100%;
         width: 0;
         right: 0;
         list-style: none;
         background-color: rgb(255, 255, 255);
-        transition: .3s;
+        transition: transform .3s;
     }
 
     nav a {
         display: block;
         padding: 10px 30px;
         color: #333;
+        font-size: 24px;
         text-decoration: none;
+    }
+
+    .active {
+        width: 280px;
     }
 }
 

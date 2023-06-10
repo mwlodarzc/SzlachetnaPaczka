@@ -1,43 +1,102 @@
-from flask import Flask, render_template, url_for
-from db import Database
+from flask import Flask, render_template, url_for, request, make_response, jsonify
+import hashlib
+headers = {'Content-Type': 'text/html'}
 
-app = Flask(
-    __name__,
-    static_url_path="",
-    template_folder="../templates",
-    static_folder="../static",
-)
+from db import Database
+from flask_cors import CORS, cross_origin
+import json
+ 
+app = Flask(__name__)
+CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 _db = Database()
 
-t = _db.add_user(
-    "123456@pwr.edu.pl",
-    "123456789",
-    "0" * 33,
-    "2022-04-29",
-    "2022-04-29",
-)
+# _db.add_user('aaaaaa@gmail.com','123456789','c0sdb68e8ssbe6es3d26c603sd8e8d1f ',"2023-06-06","2023-06-06")
 
+# @app.route("/", methods=['GET'])
+# def index():
+#     user1 = _db.select_id("person",1)
+#     return [user1]
 
-p = _db.add_person(
-    "81010200141",
-    "Łukasz",
-    "Brzęczyszczykiewicz",
-    "Akacjowa 77 Wrocław",
-    "1987-07-01",
-)
+# todo 
+# email sie powtarza z innym w bazie + ewentualnie telefon
+@app.route("/signup", methods=['POST'])
+def sign_up():
+    if request.method == 'POST':
+        data = json.loads(request.data)
+        try:
+            if data['role'] == 'caretaker':
+                caretakerId = _db.add_caretaker()
+                userId = _db.add_user(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
+                _db.add_person_caretaker(data['firstName'],data['lastName'],caretakerId,userId)
+            elif data['role'] == 'donor':
+                donorId = _db.add_donor(0,0,0)
+                userId = _db.add_user(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
+                _db.add_person_donor(data['firstName'],data['lastName'],donorId,userId)
+            else:
+                return make_response(jsonify(message="Error adding user",success=False),401)
+        except Exception as e:
+            return make_response(jsonify(message="Error adding user",success=False),401)
+        return make_response(jsonify(message="POST request accepted",success=True),200)
+    else:
+        return make_response(jsonify(message="POST request not returned",success=False),401)
 
-# print(_db.select_id("user_data", t))
-# print(_db.select_id("person", p))
-# _db.update("person", p, person_user_data_ref_id=t)
-# print(_db.select_id("person", p))
+@app.route("/signin", methods=['POST'])
+def sign_in():
+    if request.method == 'POST':
+        data = json.loads(request.data)
+        try:
+            user = _db.select_email_passwd(data['email'],hashlib.md5(data['password'].encode()).hexdigest())
 
+            if user == None:
+                return make_response(jsonify(message="No user of given data found",success=False),401)
+            
+            person = _db.select_ref_id("person","user_data",user[0])
+            role = 'caretaker' if person[6] == None else 'donor'
+            return make_response(jsonify(message="POST request accepted",success=True, personId=person[0], role=role),200)
+        except Exception as e:
+            return make_response(jsonify(message="Error logging in",success=False),401)
+    else:
+        return make_response(jsonify(message="POST request not returned",success=False),401)    
 
-@app.route("/", methods=['GET'])
-def index():
-    user1 = _db.select_id("person",1)
-    return render_template("index.html", user=user1)
+@app.route("/profile/<personId>", methods=['GET','PUT'])
+def profile(personId):
+    if request.method == 'GET':
+        try:
+            person = _db.select_id("person",personId)
+            user = _db.select_id("user_data",person[9])
 
+            userInfo = {'firstName':person[2],'lastName':person[3],'email':user[1],'phoneNumber':user[2]}
+
+            if person[6] == None:
+                caretaker = _db.select_id("caretaker",person[8])
+                userInfo['donationPlace'] = caretaker[1] if caretaker[1] != None else ''
+                userInfo['carOwner'] = caretaker[2] if caretaker[2] != None else ''
+                userInfo['activeHoursStart'] = caretaker[3] if caretaker[3] != None else ''
+                userInfo['activeHoursEnd'] = caretaker[4] if caretaker[4] != None else ''
+            else:
+                donor = _db.select_id("donor",person[6])
+                userInfo['packCount'] = donor[1] if donor[1] != None else ''
+                userInfo['donationsSum'] = donor[2] if donor[2] != None else ''
+                userInfo['points'] = donor[3] if donor[3] != None else ''
+
+            return make_response(jsonify(userInfo),200)
+        except Exception as e:
+            return make_response(jsonify(message="Error profile",success=False),401)
+    elif request.method == 'PUT':
+        data = json.loads(request.data)
+        try:
+            _db.update(data['table'], personId, data['record'], data['content'])
+
+            # todo -> update user, update donor, update caretaker
+
+            return make_response(jsonify(xd="xd"),200)
+        except Exception as e:
+            return make_response(jsonify(message="Error edit profile",success=False),401)
+    else:
+        return make_response(jsonify(message="PUT request not returned",success=False),401)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5000,debug=True)
+    

@@ -1,0 +1,114 @@
+.wrap-sign-in {
+    height: 310px;
+    width: 380px;
+    display: block;
+    background-color: var(--green-light);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -215px 0 0 -190px;
+    box-shadow: 2px -2px 6px var(--green);
+    padding: 30px;
+    overflow: hidden;
+}
+
+.sign-in-h1 {
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-item {
+    margin: 4px 0;
+}
+
+h2 {
+    color: var(--black);
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    color: var(--green);
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid rgb(140, 140, 140);
+    padding: 5px;
+}
+
+.error-txt {
+    margin-top: 2px;
+    font-size: 11px;
+    color: var(--black);
+}
+
+.hide {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.btn-sign-in {
+    width: 100px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--green-lighter);
+    color: var(--black);
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid var(--green);
+}
+
+.btn-sign-in:hover {
+    background-color: var(--green-lighter);
+    border: 1px solid var(--black);
+}
+
+.sign-in-err-h1 {
+    margin-bottom: 10px;
+}
+
+.login-ways-wrap{
+    margin-top: 20px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* loading animation */
+
+.loader-container {
+    justify-self: center;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.spinner {
+    position: sticky;
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: var(--black) transparent var(--black) transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
