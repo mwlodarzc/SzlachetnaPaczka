@@ -1,7 +1,7 @@
 import os
 import psycopg2
 from config import config
-
+from psycopg2.sql import SQL
 
 class Database:
     LEVEL = ("low", "mid", "mid")
@@ -19,7 +19,8 @@ class Database:
         #     # print(db_version)
         #     # cursor.close()
         cursor = self.connector.cursor()
-        # cursor.execute(open("src/drop.sql", "r").read())
+        cursor.execute(open("src/drop.sql", "r").read())
+        cursor.execute("SET datestyle TO 'ISO, DMY';")
         cursor.execute(open("src/init.sql", "r").read())
         cursor.close()
         self.connector.commit()
@@ -42,6 +43,14 @@ class Database:
         self.connector.commit()
         return tmp
     
+    def select_all(self, table: str) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table};")
+        tmp = cursor.fetchall()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
     def select_ref_id(self, table: str, refTable: str, refId: int) -> tuple:
         cursor = self.connector.cursor()
         cursor.execute(f"SELECT * FROM {table} WHERE {table}_{refTable}_ref_id={refId}")
@@ -58,7 +67,16 @@ class Database:
         self.connector.commit()
         return tmp
     
-    def update(self, table: str, id: int, record: str, content: str):
+    def update(self, table: str, id: int, **kwargs):
+        cursor = self.connector.cursor()
+        for kw in kwargs:
+            cursor.execute(
+                f"UPDATE {table} SET {kw} = {kwargs[kw]} WHERE {table}_id = {id};"
+            )
+        cursor.close()
+        self.connector.commit()
+    
+    def update_selected(self, table: str, id: int, record: str, content: str):
         cursor = self.connector.cursor()
         cursor.execute(f"UPDATE {table} SET {record} = '{content}' WHERE {table}_id = {id};")
         cursor.close()
@@ -70,7 +88,7 @@ class Database:
         cursor.close()
         self.connector.commit()
 
-    def add_user(
+    def add_user_data(
         self,
         email_address: str,
         phone_number: str,
@@ -103,7 +121,7 @@ class Database:
     ):
         cur = self.connector.cursor()
         cur.execute(
-            "INSERT INTO caretaker (donation_place,car_owner, active_hours_start,active_hours) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
+            "INSERT INTO caretaker (donation_place,car_owner, active_hours_start, active_hours_end) VALUES (%s,%s,%s,%s) RETURNING caretaker_id;",
             (donation_place, car_owner, active_hours_start, active_hours_end),
         )
         tmp = cur.fetchone()[0]
@@ -111,7 +129,7 @@ class Database:
         cur.close()
         return tmp
     
-    def add_caretaker(
+    def add_caretaker_empty(
         self,
     ):
         car_owner = False
@@ -126,11 +144,11 @@ class Database:
         return tmp
 
     def add_help_group(self, poverty_level: str):
-        # test
         assert poverty_level not in self.LEVEL
         cur = self.connector.cursor()
         cur.execute(
-            "INSERT INTO help_group VALUES (%s) RETURNING help_group_id", poverty_level
+            "INSERT INTO help_group (poverty_level) VALUES (%s) RETURNING help_group_id",
+            [self.LEVEL[int(poverty_level)-1]],
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -139,8 +157,8 @@ class Database:
 
     def add_product(self, kind: str):
         cur = self.connector.cursor()
-        self.cursor.execute(
-            "INSERT INTO product VALUES (%s) RETURNING product_id;", kind
+        cur.execute(
+            SQL("INSERT INTO product (kind) VALUES (%s) RETURNING product_id;"), [kind]
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()
@@ -149,7 +167,7 @@ class Database:
 
     def add_needs(self, count: int):
         cur = self.connector.cursor()
-        cur.execute("INSERT INTO needs (count) VALUES (%s) RETURNING needs_id;", count)
+        cur.execute("INSERT INTO needs (count) VALUES (%s) RETURNING needs_id;", [count])
         tmp = cur.fetchone()[0]
         self.connector.commit()
         cur.close()
@@ -184,19 +202,6 @@ class Database:
         cur.execute(
             "INSERT INTO person (pesel, forename, surname, address, birth) VALUES (%s,%s,%s,%s,%s) RETURNING person_id;",
             (pesel, forename, surname, address, birth),
-        )
-        tmp = cur.fetchone()[0]
-        self.connector.commit()
-        cur.close()
-        return tmp
-    
-    def add_person(
-        self, forename: str, surname: str,
-    ):
-        cur = self.connector.cursor()
-        cur.execute(
-            "INSERT INTO person (forename, surname) VALUES (%s,%s) RETURNING person_id;",
-            (forename, surname),
         )
         tmp = cur.fetchone()[0]
         self.connector.commit()

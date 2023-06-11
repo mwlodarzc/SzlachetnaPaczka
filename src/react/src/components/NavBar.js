@@ -32,6 +32,9 @@ const NavBar = (props) => {
           {isLoggedIn ? (
           <>
             <li>
+              <Link onClick={hideBurger} to="/Fundraisers">Fundraisers</Link>
+            </li>
+            <li>
               <Link onClick={hideBurger} to="/users/profile">Profile</Link>
             </li>
           </>

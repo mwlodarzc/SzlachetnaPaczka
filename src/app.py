@@ -3,8 +3,10 @@ import hashlib
 headers = {'Content-Type': 'text/html'}
 
 from db import Database
+from load import MockData
 from flask_cors import CORS, cross_origin
 import json
+import datetime
  
 app = Flask(__name__)
 CORS(app)
@@ -12,12 +14,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 _db = Database()
 
-# _db.add_user('aaaaaa@gmail.com','123456789','c0sdb68e8ssbe6es3d26c603sd8e8d1f ',"2023-06-06","2023-06-06")
-
-# @app.route("/", methods=['GET'])
-# def index():
-#     user1 = _db.select_id("person",1)
-#     return [user1]
+MockData.load(_db)
 
 # todo 
 # email sie powtarza z innym w bazie + ewentualnie telefon
@@ -27,12 +24,12 @@ def sign_up():
         data = json.loads(request.data)
         try:
             if data['role'] == 'caretaker':
-                caretakerId = _db.add_caretaker()
-                userId = _db.add_user(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
+                caretakerId = _db.add_caretaker_empty()
+                userId = _db.add_user_data(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
                 _db.add_person_caretaker(data['firstName'],data['lastName'],caretakerId,userId)
             elif data['role'] == 'donor':
                 donorId = _db.add_donor(0,0,0)
-                userId = _db.add_user(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
+                userId = _db.add_user_data(data['email'],'123456789',hashlib.md5(data['password'].encode()).hexdigest(),"2023-06-06","2023-06-06")
                 _db.add_person_donor(data['firstName'],data['lastName'],donorId,userId)
             else:
                 return make_response(jsonify(message="Error adding user",success=False),401)
@@ -87,13 +84,55 @@ def profile(personId):
     elif request.method == 'PUT':
         data = json.loads(request.data)
         try:
-            _db.update(data['table'], personId, data['record'], data['content'])
+            _db.update_selected(data['table'], personId, data['record'], data['content'])
 
             # todo -> update user, update donor, update caretaker
 
             return make_response(jsonify(xd="xd"),200)
         except Exception as e:
             return make_response(jsonify(message="Error edit profile",success=False),401)
+    else:
+        return make_response(jsonify(message="PUT request not returned",success=False),401)
+    
+@app.route("/fundraisers", methods=['GET'])
+def fundraisers():
+    if request.method == 'GET':
+        try:
+            helpGroups = _db.select_all("help_group")
+            helpGroupsJSON = []
+            for group in helpGroups:
+                needs = _db.select_id("needs",group[0])
+                product = _db.select_id("product",needs[0])
+
+                donation = _db.select_id("donations",group[0])
+                donor = _db.select_id("donor",group[0])
+                donorPerson = _db.select_ref_id("person","donor",donor[0])
+                caretaker = _db.select_id("caretaker",group[2])
+                caretakerPerson = _db.select_ref_id("person","caretaker",caretaker[0])
+
+                helpGroupsJSON.append( {
+                    'groupId':group[0],
+                    'povertyLevel':group[1],
+                    'needs': {
+                        'product':product[1] if product != None else '',
+                        'count':needs[1] if needs != None else ''
+                    },
+                    'donation': {
+                        'date':donation[1].strftime('%m-%d-%Y'),
+                        'note':donation[2],
+                        'donator': " ".join((donorPerson[2],donorPerson[3]))
+                    },
+                    'caretaker': {
+                        'fullName': " ".join((caretakerPerson[2],caretakerPerson[3])),
+                        'activeHoursStart':caretaker[3].strftime('%H:%M:%S'),
+                        'activeHoursEnd':caretaker[4].strftime('%H:%M:%S')
+                    }
+                } )
+
+            return make_response(jsonify(helpGroups = helpGroupsJSON),200)
+        except Exception as e:
+            print(e)
+            return make_response(jsonify(message="Error profile",success=False),401)
     else:
         return make_response(jsonify(message="PUT request not returned",success=False),401)
 

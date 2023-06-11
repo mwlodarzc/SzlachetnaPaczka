@@ -5,6 +5,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
+import Fundraisers from "./pages/Fundraisers";
 
 const RouteSwitch = () => {
   return (
@@ -12,7 +13,7 @@ const RouteSwitch = () => {
       <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/Fundraisers" element={<Fundraisers />}/>
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/SignIn" element={<SignIn/>} />
         <Route path="/users/profile" element={<Profile />} />

@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS caretaker(
 CREATE TABLE IF NOT EXISTS help_group(
     help_group_id BIGSERIAL NOT NULL PRIMARY KEY,
     poverty_level LEVEL NOT NULL,
-    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) UNIQUE
+    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
 );
 
 CREATE TABLE IF NOT EXISTS product(
@@ -33,11 +33,10 @@ CREATE TABLE IF NOT EXISTS product(
 );
 
 CREATE TABLE IF NOT EXISTS needs(
-    need_id BIGSERIAL PRIMARY KEY,
+    needs_id BIGSERIAL PRIMARY KEY,
     count INT NOT NULL,
-    needs_help_group_ref BIGINT REFERENCES help_group(help_group_id),
-    needs_products_ref BIGINT REFERENCES product(product_id)
-
+    needs_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
+    needs_products_ref_id BIGINT REFERENCES product(product_id)
 );
 
 CREATE TABLE IF NOT EXISTS donor(
@@ -49,7 +48,7 @@ CREATE TABLE IF NOT EXISTS donor(
 );
 
 CREATE TABLE IF NOT EXISTS donations(
-    donation_id BIGSERIAL PRIMARY KEY,
+    donations_id BIGSERIAL PRIMARY KEY,
     "date" DATE NOT NULL,
     note TEXT NOT NULL,
     donations_donor_ref_id BIGINT REFERENCES donor(donor_id),
