@@ -14,7 +14,9 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 _db = Database()
 
-MockData.load(_db)
+
+if _db.is_empty('person'):
+    MockData.load(_db)
 
 # todo 
 # email sie powtarza z innym w bazie + ewentualnie telefon
@@ -34,6 +36,7 @@ def sign_up():
             else:
                 return make_response(jsonify(message="Error adding user",success=False),401)
         except Exception as e:
+            print(e)
             return make_response(jsonify(message="Error adding user",success=False),401)
         return make_response(jsonify(message="POST request accepted",success=True),200)
     else:

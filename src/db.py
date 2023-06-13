@@ -19,9 +19,10 @@ class Database:
         #     # print(db_version)
         #     # cursor.close()
         cursor = self.connector.cursor()
-        cursor.execute(open("src/drop.sql", "r").read())
+        # cursor.execute(open("src/drop.sql", "r").read())
         cursor.execute("SET datestyle TO 'ISO, DMY';")
         cursor.execute(open("src/init.sql", "r").read())
+
         cursor.close()
         self.connector.commit()
 
@@ -34,6 +35,20 @@ class Database:
     ):
         ...
         # add_user(self, user_info)
+
+    def is_empty(self, table: str) -> bool:
+        cursor = self.connector.cursor()
+        isEmpty = True
+        try:
+            cursor.execute(f"SELECT * FROM {table}")
+            tmp = cursor.fetchone()
+            isEmpty = False if tmp else True
+        except:
+            isEmpty = True
+        
+        cursor.close()
+        self.connector.commit()
+        return isEmpty
 
     def select_id(self, table: str, id: int) -> tuple:
         cursor = self.connector.cursor()
