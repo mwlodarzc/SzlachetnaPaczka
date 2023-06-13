@@ -1,0 +1,1001 @@
+date,amount,note
+04/03/2023,82.64,quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+07/05/2023,80.57,quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id
+05/09/2022,85.66,praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet
+25/11/2022,25.35,porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat
+17/04/2023,4.67,amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum
+21/08/2022,51.54,suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris
+24/12/2022,48.44,duis at velit eu est congue elementum in hac habitasse platea dictumst morbi
+03/11/2022,15.92,nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget
+21/05/2023,67.53,potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas
+14/01/2023,18.73,sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus
+28/06/2022,59.95,lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus
+24/05/2023,33.78,metus sapien ut nunc vestibulum ante ipsum primis in faucibus
+03/05/2023,97.3,in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam
+21/11/2022,56.07,sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula
+05/07/2022,48.85,pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut
+10/06/2023,93.11,sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non
+22/11/2022,52.07,eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et
+08/02/2023,69.91,risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam
+15/09/2022,73.5,dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero
+08/11/2022,73.76,sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod
+05/11/2022,24.05,adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante
+22/05/2023,48.53,luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum
+22/08/2022,95.45,erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at
+02/04/2023,42.34,lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum
+03/08/2022,73.94,quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci
+18/01/2023,29.68,hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie
+03/05/2023,55.29,pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut
+30/03/2023,58.77,mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id
+18/12/2022,33.89,montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis
+27/02/2023,64.67,aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac
+07/03/2023,83.21,a nibh in quis justo maecenas rhoncus aliquam lacus morbi
+15/04/2023,62.0,et tempus semper est quam pharetra magna ac consequat metus
+21/02/2023,27.47,rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat
+27/08/2022,95.71,nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus
+03/11/2022,42.37,nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque
+03/12/2022,63.1,ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit
+28/02/2023,54.96,nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis
+26/09/2022,92.63,nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim
+07/09/2022,14.86,tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi
+03/06/2023,48.96,proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien
+14/08/2022,38.57,sem sed sagittis nam congue risus semper porta volutpat quam pede
+23/02/2023,68.43,etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit
+23/08/2022,59.19,vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu
+13/11/2022,82.42,duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in
+06/04/2023,19.91,ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum
+22/02/2023,76.13,sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo
+26/09/2022,10.75,blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum in
+29/03/2023,83.57,blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus
+11/11/2022,71.7,mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae
+20/10/2022,32.31,magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et
+16/01/2023,31.58,cras mi pede malesuada in imperdiet et commodo vulputate justo in
+22/09/2022,16.38,ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit
+20/11/2022,22.36,dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium
+19/12/2022,65.78,mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis
+11/09/2022,43.02,habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla
+26/03/2023,89.69,convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel
+28/06/2022,37.17,duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus
+12/07/2022,89.61,vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum
+14/03/2023,72.0,suscipit ligula in lacus curabitur at ipsum ac tellus semper
+19/06/2022,2.53,potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis
+09/10/2022,91.99,convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel
+10/08/2022,2.71,porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed
+08/05/2023,99.85,luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at
+14/05/2023,81.81,luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium
+05/03/2023,18.51,ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing
+11/01/2023,50.3,odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi
+05/06/2023,62.57,tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet
+07/07/2022,58.8,in felis donec semper sapien a libero nam dui proin leo odio porttitor id
+02/12/2022,54.65,hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero
+23/02/2023,75.66,massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam
+23/11/2022,2.54,vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci
+21/07/2022,1.81,felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec
+17/08/2022,22.95,erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus
+21/12/2022,14.29,lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque
+07/07/2022,40.59,sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu
+08/06/2023,24.1,lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu
+20/05/2023,96.66,dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras
+20/12/2022,29.15,semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum
+19/08/2022,11.01,sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum
+03/09/2022,63.19,nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi
+05/06/2023,7.09,quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in
+16/12/2022,79.66,enim blandit mi in porttitor pede justo eu massa donec dapibus duis
+25/09/2022,38.35,est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum
+21/10/2022,7.64,felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi
+03/07/2022,33.6,faucibus orci luctus et ultrices posuere cubilia curae duis faucibus
+05/02/2023,87.61,tempus vel pede morbi porttitor lorem id ligula suspendisse ornare
+05/04/2023,37.64,elit proin interdum mauris non ligula pellentesque ultrices phasellus id
+31/12/2022,45.01,posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in
+17/02/2023,24.21,ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros
+01/01/2023,29.47,ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie
+22/08/2022,22.99,libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus
+03/11/2022,6.48,mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet
+03/01/2023,99.59,enim leo rhoncus sed vestibulum sit amet cursus id turpis
+05/08/2022,42.84,nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel
+05/11/2022,18.34,ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non
+24/01/2023,96.12,ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl
+26/01/2023,53.93,sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis
+29/03/2023,54.0,sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam
+12/11/2022,36.66,id luctus nec molestie sed justo pellentesque viverra pede ac diam
+25/12/2022,56.75,orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at
+25/09/2022,67.68,duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium
+09/09/2022,35.73,phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque
+13/05/2023,10.9,viverra pede ac diam cras pellentesque volutpat dui maecenas tristique
+11/07/2022,26.13,non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus
+28/01/2023,75.15,augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id
+18/02/2023,1.76,lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius
+05/06/2023,75.69,ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque
+11/05/2023,24.3,nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus
+28/10/2022,60.85,maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede
+06/10/2022,53.29,quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis
+08/04/2023,45.84,proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam
+09/12/2022,5.02,diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus
+17/11/2022,88.19,arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget
+26/10/2022,33.3,etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius
+22/03/2023,55.11,consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien
+08/12/2022,25.89,faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec
+31/08/2022,27.19,nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam
+27/08/2022,12.16,laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis
+20/09/2022,89.54,dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut
+31/03/2023,71.58,proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus
+13/11/2022,21.9,ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus
+22/06/2022,68.33,accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a
+07/04/2023,88.0,pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh
+09/12/2022,97.97,aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque
+06/04/2023,60.55,eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum
+12/10/2022,63.03,in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc
+04/03/2023,39.33,odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at
+13/03/2023,58.54,vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel
+23/04/2023,48.74,ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique
+28/11/2022,19.73,sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus
+18/05/2023,30.53,est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum
+07/09/2022,23.7,imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce
+29/09/2022,77.72,vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet
+19/11/2022,12.85,quis augue luctus tincidunt nulla mollis molestie lorem quisque ut
+02/08/2022,65.57,est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis
+09/11/2022,62.3,suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris
+16/02/2023,20.27,elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus
+18/07/2022,82.05,amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus
+16/06/2022,45.42,cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi
+19/03/2023,35.47,quisque porta volutpat erat quisque erat eros viverra eget congue eget semper
+28/01/2023,81.37,id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at
+25/12/2022,55.18,integer pede justo lacinia eget tincidunt eget tempus vel pede
+31/10/2022,42.77,nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis
+22/08/2022,69.01,in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut
+23/02/2023,99.23,convallis duis consequat dui nec nisi volutpat eleifend donec ut
+08/09/2022,39.89,cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec
+14/09/2022,4.57,est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce
+30/05/2023,77.23,morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus
+15/11/2022,64.33,nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est
+29/08/2022,7.49,vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+02/05/2023,29.0,sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget
+22/03/2023,68.8,mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus
+03/01/2023,67.97,tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim
+13/02/2023,37.59,tempus vivamus in felis eu sapien cursus vestibulum proin eu mi
+01/03/2023,69.97,at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam
+04/12/2022,36.45,nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget
+03/05/2023,29.07,ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam
+12/01/2023,37.42,sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat
+16/12/2022,42.78,non interdum in ante vestibulum ante ipsum primis in faucibus
+09/08/2022,60.51,sed augue aliquam erat volutpat in congue etiam justo etiam pretium
+30/09/2022,38.5,et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere
+28/07/2022,85.86,aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit
+12/12/2022,79.41,mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa
+22/08/2022,62.72,odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus
+27/10/2022,37.56,blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+22/12/2022,7.62,justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus
+10/12/2022,60.12,in felis eu sapien cursus vestibulum proin eu mi nulla ac enim
+18/10/2022,26.5,varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit
+22/06/2022,12.3,ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero
+16/12/2022,84.76,turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere
+17/09/2022,44.5,elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi
+20/02/2023,87.97,orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio
+19/12/2022,80.85,lorem ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent lectus
+14/08/2022,78.67,nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu
+14/01/2023,49.03,eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus
+19/02/2023,19.31,cursus urna ut tellus nulla ut erat id mauris vulputate elementum
+08/06/2023,61.34,ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi
+14/12/2022,87.88,quam nec dui luctus rutrum nulla tellus in sagittis dui
+15/05/2023,67.23,dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel
+17/01/2023,4.68,primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio
+20/06/2022,78.8,eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in
+28/03/2023,20.95,phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at
+04/05/2023,44.6,ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam
+06/11/2022,61.25,erat nulla tempus vivamus in felis eu sapien cursus vestibulum
+14/02/2023,39.87,rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat
+21/11/2022,2.74,in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam
+23/04/2023,61.83,nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo
+10/02/2023,56.84,non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar
+25/03/2023,34.41,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor
+25/04/2023,50.13,in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit
+26/03/2023,5.27,massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est
+22/05/2023,73.7,dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque
+18/04/2023,75.85,morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus
+17/12/2022,47.42,mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis
+22/08/2022,26.06,velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id
+10/05/2023,11.93,habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante
+28/09/2022,88.07,pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit
+13/07/2022,49.62,cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non
+06/09/2022,90.87,rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed
+16/04/2023,61.99,dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat
+27/12/2022,49.18,felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed
+22/11/2022,91.87,magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer
+01/11/2022,52.14,sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis
+26/09/2022,47.0,quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum
+18/09/2022,3.89,mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu
+07/03/2023,87.05,diam cras pellentesque volutpat dui maecenas tristique est et tempus semper
+12/08/2022,14.51,tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac
+16/01/2023,50.23,aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis
+06/06/2023,53.95,consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam
+05/05/2023,22.38,molestie lorem quisque ut erat curabitur gravida nisi at nibh in
+17/07/2022,24.79,lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a
+26/04/2023,76.7,amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at
+18/01/2023,2.97,sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede
+29/06/2022,59.33,at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient
+02/06/2023,36.95,aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus
+31/08/2022,25.13,nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit
+03/05/2023,30.08,ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem
+15/04/2023,88.52,dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet
+26/04/2023,76.54,dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum
+04/04/2023,42.94,et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl
+12/11/2022,36.76,ac diam cras pellentesque volutpat dui maecenas tristique est et tempus
+12/11/2022,4.69,pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper
+03/01/2023,23.0,accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget
+14/10/2022,80.13,elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec
+10/09/2022,29.18,mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique
+02/05/2023,58.57,nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi
+15/02/2023,14.6,elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula
+21/08/2022,88.78,nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci
+09/08/2022,43.09,orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus
+28/06/2022,73.02,eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus
+17/04/2023,74.23,eget eros elementum pellentesque quisque porta volutpat erat quisque erat
+24/09/2022,79.41,lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum
+10/05/2023,50.3,ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu
+10/06/2023,14.67,rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis
+10/11/2022,52.64,faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est
+30/08/2022,8.47,id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque
+07/03/2023,79.59,augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo
+18/07/2022,93.73,nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem
+04/11/2022,19.05,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien
+14/02/2023,68.29,hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt
+05/06/2023,99.97,sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat
+12/09/2022,99.66,bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede
+24/01/2023,94.24,eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt
+13/11/2022,90.54,est lacinia nisi venenatis tristique fusce congue diam id ornare
+18/09/2022,97.77,pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante
+25/02/2023,59.15,amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus
+16/08/2022,39.2,justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit
+30/07/2022,92.23,sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus
+23/06/2022,6.0,congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo
+12/12/2022,55.47,nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus
+06/10/2022,1.15,morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie
+04/12/2022,34.47,nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget
+03/06/2023,86.31,at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat
+15/01/2023,47.85,placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros
+15/10/2022,71.01,phasellus sit amet erat nulla tempus vivamus in felis eu
+09/06/2023,6.68,erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc
+22/10/2022,81.49,lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non
+29/03/2023,40.66,interdum in ante vestibulum ante ipsum primis in faucibus orci luctus
+20/04/2023,22.54,neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor
+24/02/2023,65.09,sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum
+15/02/2023,65.52,faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo
+16/06/2022,61.82,turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor
+16/08/2022,68.21,sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et
+28/02/2023,4.81,luctus rutrum nulla tellus in sagittis dui vel nisl duis ac
+22/02/2023,70.4,sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer
+20/07/2022,46.73,quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id
+10/10/2022,26.91,non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac
+25/04/2023,92.07,nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus
+17/06/2022,46.36,consequat morbi a ipsum integer a nibh in quis justo maecenas
+27/06/2022,90.9,vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa
+18/01/2023,36.16,maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis
+25/01/2023,92.7,donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed
+17/03/2023,81.48,consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus
+01/04/2023,70.98,erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla
+11/06/2023,80.24,ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes
+19/11/2022,53.23,eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis
+23/09/2022,31.7,vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc
+18/11/2022,48.7,elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac
+02/04/2023,3.05,in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis
+28/04/2023,5.02,a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus
+23/04/2023,97.84,justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna
+28/08/2022,17.42,interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit
+11/05/2023,34.94,interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu
+02/12/2022,28.53,aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce
+16/08/2022,28.14,phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla
+25/01/2023,38.4,magna vulputate luctus cum sociis natoque penatibus et magnis dis
+23/09/2022,11.28,aliquet massa id lobortis convallis tortor risus dapibus augue vel
+25/09/2022,81.56,amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed
+07/10/2022,72.16,dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia
+08/08/2022,60.96,vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus
+13/04/2023,49.44,fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit
+19/08/2022,29.7,amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus
+26/08/2022,15.46,pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut
+04/10/2022,32.66,in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan
+21/12/2022,68.23,ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at
+25/02/2023,88.67,laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel
+06/05/2023,84.27,pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu
+03/12/2022,80.73,vel est donec odio justo sollicitudin ut suscipit a feugiat
+25/09/2022,67.07,id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede
+12/01/2023,77.79,risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien
+27/04/2023,25.4,volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus
+10/10/2022,17.26,tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non
+05/10/2022,57.94,suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at
+29/09/2022,35.88,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae
+28/06/2022,34.23,felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus
+02/03/2023,28.85,amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien
+04/11/2022,97.94,in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit
+12/01/2023,45.43,hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id
+10/10/2022,79.92,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam
+02/06/2023,36.62,sem duis aliquam convallis nunc proin at turpis a pede posuere
+30/05/2023,42.38,in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer
+26/11/2022,40.95,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi
+02/06/2023,93.09,ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae
+08/10/2022,50.4,in felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam
+19/09/2022,62.65,quam pede lobortis ligula sit amet eleifend pede libero quis
+11/11/2022,41.69,turpis enim blandit mi in porttitor pede justo eu massa
+07/02/2023,60.32,fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus
+17/03/2023,9.71,natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida
+16/05/2023,76.0,erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus
+21/02/2023,53.34,adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum
+04/03/2023,13.29,nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris
+23/04/2023,37.57,pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim
+25/02/2023,90.48,cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a
+13/12/2022,53.07,justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea
+16/09/2022,92.97,justo sollicitudin ut suscipit a feugiat et eros vestibulum ac
+12/10/2022,93.18,donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium
+13/01/2023,86.56,ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede
+06/01/2023,9.66,nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas
+01/05/2023,95.78,massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien
+11/04/2023,13.79,in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit
+31/10/2022,26.29,faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a
+26/06/2022,33.5,ligula nec sem duis aliquam convallis nunc proin at turpis a
+28/04/2023,81.91,interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet
+22/01/2023,6.05,in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien
+07/07/2022,57.67,quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis
+24/03/2023,75.17,id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+27/03/2023,37.85,erat volutpat in congue etiam justo etiam pretium iaculis justo in hac
+13/07/2022,20.99,pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est
+23/01/2023,52.79,faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui
+22/10/2022,72.53,felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis
+21/08/2022,63.87,nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros
+26/12/2022,22.46,eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci
+11/05/2023,71.73,gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget
+16/06/2022,8.92,penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem
+23/12/2022,19.26,mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede
+25/05/2023,3.24,a libero nam dui proin leo odio porttitor id consequat in consequat
+11/12/2022,42.01,est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo
+12/12/2022,75.31,sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus
+03/09/2022,60.63,curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus
+09/04/2023,35.58,in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed
+30/09/2022,95.73,diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus
+15/01/2023,36.92,montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl
+08/08/2022,36.26,erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum
+04/02/2023,54.14,morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor
+01/05/2023,59.02,placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit
+16/04/2023,75.2,sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum
+15/10/2022,66.42,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy
+18/05/2023,87.89,vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac enim
+15/12/2022,80.54,adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis
+17/10/2022,62.6,platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec
+07/10/2022,50.35,sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at
+19/07/2022,36.37,maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus
+26/11/2022,91.45,iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget
+08/12/2022,14.19,ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum
+27/12/2022,9.86,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis
+19/12/2022,63.62,imperdiet nullam orci pede venenatis non sodales sed tincidunt eu
+10/04/2023,35.98,gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae
+18/05/2023,57.23,eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus
+14/08/2022,23.88,non velit donec diam neque vestibulum eget vulputate ut ultrices
+02/01/2023,23.49,nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a
+06/05/2023,62.56,lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est
+03/01/2023,30.45,laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem
+19/05/2023,56.45,nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra
+28/06/2022,56.18,id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis
+10/07/2022,60.71,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam
+29/03/2023,5.79,dapibus duis at velit eu est congue elementum in hac habitasse
+27/11/2022,55.57,nisi eu orci mauris lacinia sapien quis libero nullam sit
+12/05/2023,71.46,nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla
+23/07/2022,74.63,ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+28/08/2022,98.71,metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis
+21/07/2022,99.44,potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis
+18/01/2023,11.67,dui maecenas tristique est et tempus semper est quam pharetra
+12/05/2023,2.3,quis libero nullam sit amet turpis elementum ligula vehicula consequat
+08/11/2022,71.89,eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque
+29/11/2022,16.56,diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce
+18/02/2023,99.3,pede justo lacinia eget tincidunt eget tempus vel pede morbi
+19/06/2022,75.74,curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac
+16/11/2022,67.22,neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus
+11/08/2022,90.05,vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio
+13/10/2022,35.02,bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at
+06/08/2022,51.49,ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus
+06/12/2022,66.27,potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus
+13/12/2022,74.7,mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus
+01/01/2023,98.58,dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet
+21/04/2023,71.98,vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas
+24/04/2023,72.6,nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio
+17/08/2022,48.87,id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce
+12/08/2022,64.75,cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit
+09/04/2023,95.37,eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue
+10/07/2022,1.82,fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim
+21/09/2022,38.49,accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend
+31/08/2022,52.31,mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis
+02/03/2023,37.67,arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in
+04/04/2023,55.86,dapibus duis at velit eu est congue elementum in hac habitasse
+18/04/2023,82.99,orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio
+06/06/2023,95.08,ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices
+18/10/2022,26.76,ligula suspendisse ornare consequat lectus in est risus auctor sed
+17/03/2023,65.85,nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam
+22/04/2023,58.8,curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec
+02/01/2023,39.19,diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum
+05/01/2023,51.58,convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis
+14/04/2023,92.4,sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus
+08/09/2022,56.7,sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue
+17/05/2023,85.56,ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus pellentesque at
+31/12/2022,63.85,consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae
+03/04/2023,23.65,vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros
+09/08/2022,88.7,orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat
+24/04/2023,65.21,in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis
+02/10/2022,94.45,vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor
+29/05/2023,35.14,mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla
+23/08/2022,53.06,sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+07/02/2023,2.26,rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum
+06/09/2022,61.33,iaculis diam erat fermentum justo nec condimentum neque sapien placerat
+10/09/2022,31.29,duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate
+25/12/2022,54.78,orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet
+27/06/2022,44.01,erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget
+30/03/2023,26.57,morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque
+10/05/2023,20.4,ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus
+22/06/2022,20.43,in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus
+01/09/2022,45.73,lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet
+01/04/2023,37.89,erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam
+06/06/2023,44.66,lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non
+20/06/2022,57.5,varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci
+15/03/2023,88.52,magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean
+06/11/2022,10.34,accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel
+12/11/2022,66.0,sit amet consectetuer adipiscing elit proin interdum mauris non ligula
+03/10/2022,53.7,sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede
+29/10/2022,40.93,nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in
+15/08/2022,62.01,nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus
+31/08/2022,64.55,scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at
+04/05/2023,43.34,ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+09/04/2023,2.13,convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis
+10/03/2023,45.8,tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam
+16/05/2023,24.18,condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit
+24/11/2022,76.4,justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut
+05/01/2023,37.82,neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan
+02/02/2023,39.25,nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin
+20/07/2022,67.78,id consequat in consequat ut nulla sed accumsan felis ut at dolor
+26/09/2022,78.82,sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut
+25/10/2022,94.41,eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum
+16/03/2023,31.62,sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in
+19/06/2022,27.43,iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget
+25/01/2023,25.36,ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper
+07/10/2022,1.95,suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec
+19/12/2022,74.64,praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia
+10/06/2023,65.07,cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum
+09/10/2022,94.85,quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem
+05/03/2023,6.43,massa volutpat convallis morbi odio odio elementum eu interdum eu
+28/04/2023,74.32,nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt
+27/02/2023,27.42,commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus
+06/07/2022,4.0,quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra
+01/02/2023,82.99,cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi
+31/05/2023,46.95,dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio
+21/06/2022,77.93,augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac
+18/11/2022,83.32,nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu
+29/06/2022,90.22,in porttitor pede justo eu massa donec dapibus duis at
+07/02/2023,24.11,odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit
+07/10/2022,44.18,nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh
+01/11/2022,10.05,arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium
+02/03/2023,42.81,libero nullam sit amet turpis elementum ligula vehicula consequat morbi a
+25/10/2022,86.57,in ante vestibulum ante ipsum primis in faucibus orci luctus
+23/10/2022,15.9,interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla
+25/05/2023,55.46,augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa
+20/11/2022,4.94,est quam pharetra magna ac consequat metus sapien ut nunc
+02/03/2023,92.07,ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+17/07/2022,71.53,nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in
+02/03/2023,67.84,sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur
+03/10/2022,36.81,primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus
+10/02/2023,58.87,commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris
+18/12/2022,18.99,maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui
+18/12/2022,44.07,pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur
+03/11/2022,62.47,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+07/08/2022,96.57,ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi
+20/01/2023,91.77,enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem
+20/01/2023,44.53,est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc
+12/07/2022,97.54,condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat
+01/01/2023,54.25,pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et
+05/06/2023,99.41,semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero nam dui
+31/03/2023,93.04,in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus
+30/12/2022,13.74,integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio
+12/07/2022,10.89,purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur
+26/10/2022,30.37,nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium
+22/05/2023,11.84,ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui
+17/01/2023,44.8,nulla suscipit ligula in lacus curabitur at ipsum ac tellus
+02/02/2023,2.35,pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper
+03/10/2022,4.99,iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec
+27/06/2022,62.42,sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis
+21/03/2023,18.58,donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue
+01/01/2023,98.26,morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id
+22/02/2023,15.46,cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam
+18/07/2022,19.13,quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse
+08/08/2022,13.96,felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio
+14/04/2023,48.76,nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a
+03/03/2023,29.04,duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu
+27/01/2023,98.7,condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt
+22/12/2022,23.13,praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat
+04/05/2023,54.53,sit amet sem fusce consequat nulla nisl nunc nisl duis
+31/10/2022,49.53,luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit
+14/02/2023,83.73,pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet
+15/01/2023,97.06,etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus
+13/10/2022,7.71,varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus
+09/09/2022,61.93,bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo
+09/04/2023,73.15,eu massa donec dapibus duis at velit eu est congue elementum in
+17/05/2023,49.18,non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa
+08/01/2023,72.3,lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum
+27/10/2022,34.23,interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu
+25/05/2023,81.61,nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh
+07/07/2022,26.85,ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at
+04/02/2023,27.05,maecenas tristique est et tempus semper est quam pharetra magna ac consequat
+21/01/2023,60.11,libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum
+20/06/2022,24.86,leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue
+14/12/2022,16.9,velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget
+31/12/2022,13.79,ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam
+24/06/2022,57.0,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor
+07/07/2022,55.86,hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum
+30/07/2022,53.85,posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed
+28/07/2022,1.66,ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed
+13/10/2022,69.28,vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa
+17/04/2023,30.0,integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci
+15/11/2022,22.62,mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in
+30/04/2023,16.53,nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor
+29/06/2022,20.09,posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices
+26/03/2023,96.94,a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices
+21/02/2023,80.29,venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien
+24/03/2023,27.55,tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est
+22/10/2022,48.14,pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus
+26/02/2023,90.65,lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl
+20/01/2023,79.2,at turpis a pede posuere nonummy integer non velit donec diam neque
+20/07/2022,99.25,magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor
+25/05/2023,37.9,dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+05/10/2022,4.64,et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum
+01/03/2023,51.41,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas
+12/04/2023,94.63,convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum
+11/01/2023,75.88,in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla
+29/10/2022,54.0,ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+09/12/2022,13.7,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a
+19/12/2022,91.26,sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel
+27/12/2022,46.7,bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede
+29/10/2022,81.39,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in
+26/02/2023,64.16,et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing
+11/05/2023,41.89,dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum
+17/10/2022,24.45,magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque
+01/08/2022,87.4,nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat
+16/06/2022,57.37,arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in
+03/07/2022,57.33,nam congue risus semper porta volutpat quam pede lobortis ligula
+17/07/2022,40.58,etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat
+30/06/2022,1.11,vivamus in felis eu sapien cursus vestibulum proin eu mi nulla
+23/06/2022,82.12,pede justo eu massa donec dapibus duis at velit eu est congue elementum in
+02/06/2023,54.51,mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae
+26/02/2023,20.93,ut volutpat sapien arcu sed augue aliquam erat volutpat in
+21/09/2022,62.0,sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum
+05/09/2022,61.85,amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed
+05/07/2022,32.21,quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis
+27/08/2022,85.0,consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus
+29/04/2023,28.14,lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta
+04/06/2023,46.2,nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget
+14/04/2023,65.35,nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula
+24/02/2023,95.42,dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus
+27/07/2022,57.41,nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed
+23/02/2023,49.7,vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget
+09/04/2023,2.29,curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam
+11/10/2022,54.93,odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae
+20/12/2022,93.45,nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede
+11/01/2023,21.03,integer pede justo lacinia eget tincidunt eget tempus vel pede morbi
+06/11/2022,13.65,dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante
+12/09/2022,88.16,mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac
+14/12/2022,36.2,cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum
+02/03/2023,68.2,morbi porttitor lorem id ligula suspendisse ornare consequat lectus in
+30/06/2022,85.72,aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac
+18/06/2022,39.91,dui maecenas tristique est et tempus semper est quam pharetra magna ac
+17/12/2022,84.1,a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula
+31/12/2022,35.03,dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est
+15/10/2022,3.19,integer non velit donec diam neque vestibulum eget vulputate ut ultrices
+30/07/2022,10.91,orci mauris lacinia sapien quis libero nullam sit amet turpis
+14/08/2022,42.53,eu massa donec dapibus duis at velit eu est congue
+17/01/2023,82.64,tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam
+17/07/2022,67.52,felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec
+25/06/2022,33.17,tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non
+25/08/2022,17.04,ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi
+21/07/2022,54.72,proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu
+17/01/2023,40.59,nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit
+25/09/2022,45.45,ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum
+08/07/2022,37.85,convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget
+27/05/2023,37.94,maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in
+23/03/2023,98.97,quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices
+05/01/2023,13.43,id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo
+18/01/2023,86.69,in lacus curabitur at ipsum ac tellus semper interdum mauris
+23/09/2022,30.27,mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris
+23/03/2023,51.83,convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh
+26/08/2022,99.38,platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis
+26/11/2022,30.04,dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend
+17/06/2022,8.0,natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida
+27/08/2022,21.18,aenean sit amet justo morbi ut odio cras mi pede malesuada in
+17/01/2023,58.27,sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam
+21/07/2022,40.64,quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla
+13/08/2022,18.73,vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam
+02/06/2023,5.77,nulla sed accumsan felis ut at dolor quis odio consequat
+03/08/2022,9.98,sit amet cursus id turpis integer aliquet massa id lobortis
+11/08/2022,15.56,nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis
+02/12/2022,12.31,id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat
+21/04/2023,27.62,at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam
+20/07/2022,86.89,nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam
+29/06/2022,93.43,platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius
+16/01/2023,55.14,cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus
+21/12/2022,98.53,sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus
+21/06/2022,89.58,morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet
+12/03/2023,79.96,lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst
+09/07/2022,6.26,ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim
+03/02/2023,12.0,dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus
+29/06/2022,16.37,turpis a pede posuere nonummy integer non velit donec diam
+04/09/2022,96.63,tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at
+23/04/2023,18.04,adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula
+04/01/2023,32.52,donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est
+23/07/2022,47.88,est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu
+23/04/2023,34.5,nisi venenatis tristique fusce congue diam id ornare imperdiet sapien
+14/10/2022,38.02,vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci
+13/07/2022,57.87,urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi
+28/08/2022,41.37,mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet
+18/07/2022,23.66,dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices
+29/07/2022,21.54,consequat lectus in est risus auctor sed tristique in tempus sit amet sem
+06/12/2022,71.35,risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet
+02/09/2022,51.56,semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus
+14/12/2022,80.22,metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci
+13/10/2022,52.34,amet sem fusce consequat nulla nisl nunc nisl duis bibendum
+16/08/2022,22.65,adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing
+02/12/2022,85.01,ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam
+17/11/2022,6.73,mauris enim leo rhoncus sed vestibulum sit amet cursus id
+26/11/2022,87.37,vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non
+11/03/2023,86.46,aenean lectus pellentesque eget nunc donec quis orci eget orci
+18/06/2022,43.91,duis bibendum morbi non quam nec dui luctus rutrum nulla
+09/09/2022,24.71,eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien
+28/10/2022,19.52,enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh
+09/12/2022,21.3,sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis
+12/02/2023,82.67,amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus
+13/08/2022,88.45,orci luctus et ultrices posuere cubilia curae nulla dapibus dolor
+01/08/2022,99.66,ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus id
+06/04/2023,69.58,potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam
+09/09/2022,10.74,mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue
+18/03/2023,9.49,blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse
+08/09/2022,31.17,turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa
+11/08/2022,29.69,luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum
+02/12/2022,90.8,cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor
+24/01/2023,89.67,suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum
+18/05/2023,73.47,amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus
+06/07/2022,59.41,lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in
+14/06/2022,72.7,mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula
+07/07/2022,42.61,a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet
+15/12/2022,50.35,enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis
+04/07/2022,64.88,varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi
+08/04/2023,40.94,a ipsum integer a nibh in quis justo maecenas rhoncus aliquam
+08/04/2023,72.16,elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit
+17/11/2022,17.52,tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque
+17/12/2022,20.03,velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla
+22/01/2023,51.55,luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut
+15/05/2023,61.62,sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec
+16/10/2022,47.61,bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt
+25/01/2023,59.89,justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat
+22/04/2023,60.01,leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue
+10/04/2023,80.91,scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum
+12/06/2023,25.55,at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum
+20/10/2022,72.69,quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla
+08/09/2022,15.02,ultrices mattis odio donec vitae nisi nam ultrices libero non
+05/02/2023,65.71,luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea
+17/10/2022,5.91,pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem
+23/10/2022,91.87,blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer
+16/10/2022,32.91,vitae consectetuer eget rutrum at lorem integer tincidunt ante vel
+21/03/2023,28.52,quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus
+09/11/2022,46.11,congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque
+13/01/2023,29.58,ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer
+27/04/2023,88.83,nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper
+06/08/2022,82.99,at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt
+17/09/2022,55.47,ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur
+13/08/2022,8.8,accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas
+07/11/2022,64.12,nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat
+21/03/2023,44.71,lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat
+19/11/2022,82.07,lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam
+15/08/2022,70.03,hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius
+14/03/2023,11.89,quisque arcu libero rutrum ac lobortis vel dapibus at diam nam
+05/06/2023,42.24,nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique
+11/02/2023,86.96,pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi
+03/08/2022,8.29,ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis
+02/03/2023,93.79,interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu est congue
+25/09/2022,22.9,volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet
+30/05/2023,62.72,habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla
+02/08/2022,7.3,sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum
+08/06/2023,69.94,ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque
+13/03/2023,37.27,bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit
+09/06/2023,78.6,tristique in tempus sit amet sem fusce consequat nulla nisl
+27/03/2023,39.33,pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet
+06/08/2022,29.45,blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+15/09/2022,16.36,auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo
+02/07/2022,99.35,ut nulla sed accumsan felis ut at dolor quis odio consequat varius
+14/04/2023,84.6,neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus
+28/02/2023,72.87,et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat
+24/06/2022,6.35,donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique
+19/03/2023,5.37,quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio
+29/08/2022,17.92,integer a nibh in quis justo maecenas rhoncus aliquam lacus
+04/07/2022,40.21,porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis
+11/04/2023,45.46,ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam
+14/06/2022,63.53,ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede
+17/12/2022,41.94,consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque
+19/07/2022,30.11,vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit
+28/06/2022,12.67,pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet
+08/12/2022,79.73,blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+05/01/2023,23.61,in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id
+02/06/2023,86.63,metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque
+03/05/2023,77.48,laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue
+10/08/2022,88.97,ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo
+04/01/2023,68.19,ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla
+04/05/2023,84.45,integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id
+27/01/2023,53.77,etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras
+26/07/2022,86.12,aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum
+08/05/2023,97.93,quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis
+26/11/2022,70.65,consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede
+23/05/2023,96.61,ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti
+29/11/2022,14.55,pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna
+18/06/2022,37.15,nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a
+09/04/2023,69.37,consequat morbi a ipsum integer a nibh in quis justo
+21/02/2023,75.06,et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque
+24/03/2023,42.33,elit proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien
+11/04/2023,71.86,cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum
+14/09/2022,75.83,erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia
+07/07/2022,12.41,augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in
+13/02/2023,28.78,sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci
+10/11/2022,3.58,suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis
+06/05/2023,40.77,sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum
+09/01/2023,58.93,in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum
+23/05/2023,58.49,turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque
+19/07/2022,62.65,vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+22/12/2022,45.25,venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et
+11/09/2022,65.09,viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper
+25/05/2023,3.54,vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin
+03/08/2022,98.47,posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam
+08/03/2023,36.65,consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer
+23/11/2022,55.39,sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis
+20/02/2023,31.07,justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare
+02/04/2023,38.64,at velit eu est congue elementum in hac habitasse platea dictumst morbi
+20/08/2022,42.07,dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non
+16/09/2022,51.74,at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet
+07/10/2022,96.49,vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum
+28/10/2022,63.03,aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in
+19/09/2022,71.62,cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien
+22/03/2023,97.19,ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat
+21/07/2022,48.61,sem praesent id massa id nisl venenatis lacinia aenean sit amet justo
+29/09/2022,16.61,risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam
+13/10/2022,70.03,felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in consequat
+21/06/2022,78.08,lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet
+12/05/2023,54.89,nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis
+23/11/2022,15.14,praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi
+16/11/2022,18.03,risus auctor sed tristique in tempus sit amet sem fusce
+18/08/2022,9.12,lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla ac
+14/11/2022,50.31,luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec
+06/09/2022,68.49,nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus
+24/04/2023,86.22,metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit
+17/06/2022,53.77,ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in
+13/05/2023,86.98,vivamus tortor duis mattis egestas metus aenean fermentum donec ut
+21/05/2023,21.02,eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis
+29/10/2022,90.03,integer aliquet massa id lobortis convallis tortor risus dapibus augue
+31/01/2023,98.25,proin at turpis a pede posuere nonummy integer non velit donec diam
+28/07/2022,27.99,hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam
+03/07/2022,83.64,luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at
+13/10/2022,21.12,pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id
+25/03/2023,26.31,ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi
+08/01/2023,92.94,justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla
+24/03/2023,91.75,odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat
+29/06/2022,97.74,sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel
+15/01/2023,82.31,vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque
+07/11/2022,85.15,urna ut tellus nulla ut erat id mauris vulputate elementum
+19/10/2022,80.0,lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci
+30/08/2022,56.85,pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est
+13/04/2023,8.55,ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh
+11/08/2022,53.37,viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper
+12/01/2023,69.23,libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum
+07/08/2022,35.91,libero rutrum ac lobortis vel dapibus at diam nam tristique
+18/07/2022,82.62,dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis
+17/05/2023,42.09,nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel
+09/04/2023,74.05,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis
+24/04/2023,1.63,diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque
+01/01/2023,48.14,tempor convallis nulla neque libero convallis eget eleifend luctus ultricies
+22/08/2022,35.38,ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere
+24/11/2022,92.51,tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse
+12/08/2022,47.96,magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis
+25/06/2022,82.53,sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel
+01/11/2022,47.58,pede justo eu massa donec dapibus duis at velit eu est
+15/04/2023,50.72,eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue
+11/02/2023,47.96,pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi
+27/11/2022,48.92,viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris
+20/05/2023,26.29,imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in
+16/05/2023,72.6,massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst
+13/03/2023,1.74,enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum
+15/07/2022,11.22,mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in
+20/11/2022,14.93,nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices
+22/01/2023,56.95,erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit
+21/12/2022,16.13,magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient
+26/02/2023,7.72,justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate
+23/04/2023,59.24,pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit
+04/06/2023,14.58,est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed
+17/02/2023,9.28,viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam
+10/03/2023,92.39,sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris
+29/07/2022,11.66,posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue
+16/11/2022,52.84,rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis
+04/03/2023,15.03,id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat
+16/10/2022,15.96,turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi
+18/08/2022,65.41,in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam
+20/07/2022,10.87,non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non
+22/07/2022,72.85,at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio
+08/10/2022,42.05,habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam
+12/07/2022,52.17,sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi
+10/11/2022,41.74,ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at
+30/06/2022,14.35,adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non
+08/05/2023,32.58,ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras
+25/09/2022,67.76,fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam
+01/07/2022,15.9,faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet
+16/10/2022,61.93,elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis
+19/08/2022,70.91,ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+11/11/2022,22.0,rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet
+31/05/2023,93.69,pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et
+18/04/2023,25.46,ipsum dolor sit amet consectetuer adipiscing elit proin risus praesent
+06/07/2022,98.58,in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate
+11/07/2022,63.94,non quam nec dui luctus rutrum nulla tellus in sagittis
+02/12/2022,47.92,varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit
+30/12/2022,79.71,ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+09/05/2023,46.64,ultricies eu nibh quisque id justo sit amet sapien dignissim
+04/09/2022,73.38,elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet
+02/09/2022,28.42,justo eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea
+22/12/2022,81.57,ac lobortis vel dapibus at diam nam tristique tortor eu
+18/03/2023,91.08,proin interdum mauris non ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus
+15/01/2023,87.18,sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis
+03/02/2023,82.99,ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non
+11/09/2022,92.09,ut volutpat sapien arcu sed augue aliquam erat volutpat in congue
+22/03/2023,86.69,felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl
+08/04/2023,72.94,morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id
+16/11/2022,87.45,sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed
+04/01/2023,54.1,venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus
+22/03/2023,48.04,nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget
+17/04/2023,43.71,lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in
+23/06/2022,92.07,eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec
+20/04/2023,56.86,lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra
+17/05/2023,74.79,sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis
+30/10/2022,46.83,mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa
+10/01/2023,47.35,mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum
+02/09/2022,10.4,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis
+29/01/2023,33.52,amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis
+07/04/2023,23.6,velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla
+01/01/2023,71.47,sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus
+16/02/2023,19.3,integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam
+23/09/2022,20.07,odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut
+08/04/2023,91.0,rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis
+23/01/2023,36.21,justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id
+05/08/2022,10.56,vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor
+23/09/2022,41.92,lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula suspendisse ornare consequat
+12/05/2023,15.42,mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus
+07/08/2022,48.77,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+09/05/2023,90.73,sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo
+08/01/2023,92.93,orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula
+05/11/2022,89.54,ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis
+28/01/2023,64.75,morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus
+20/01/2023,43.29,gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo
+16/01/2023,78.85,vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti
+21/05/2023,56.78,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor
+10/05/2023,20.73,ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed
+10/06/2023,61.11,blandit non interdum in ante vestibulum ante ipsum primis in faucibus
+08/02/2023,4.57,nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend
+26/06/2022,96.66,risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus
+25/02/2023,40.64,blandit mi in porttitor pede justo eu massa donec dapibus
+23/05/2023,32.91,leo odio porttitor id consequat in consequat ut nulla sed accumsan
+29/04/2023,36.77,mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec
+23/11/2022,67.55,cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus
+31/01/2023,14.84,viverra pede ac diam cras pellentesque volutpat dui maecenas tristique
+03/01/2023,93.59,tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris
+06/09/2022,79.54,convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum
+23/06/2022,41.41,commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin
+05/03/2023,92.21,gravida nisi at nibh in hac habitasse platea dictumst aliquam augue
+02/04/2023,12.4,nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo
+24/05/2023,26.16,pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra
+17/08/2022,75.58,velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat
+04/12/2022,50.63,luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci
+11/08/2022,2.88,non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla
+03/06/2023,65.97,a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque
+28/03/2023,25.51,massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo
+29/03/2023,94.1,fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet
+24/02/2023,78.04,nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer
+05/11/2022,70.73,cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu
+26/12/2022,52.73,etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut
+22/07/2022,19.29,tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut
+20/03/2023,39.62,id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam
+21/03/2023,23.62,vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat
+23/02/2023,20.12,enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa
+02/08/2022,59.68,tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit
+09/05/2023,65.6,at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae
+20/12/2022,99.77,quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec
+31/10/2022,34.6,montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa
+21/05/2023,75.51,curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel
+19/06/2022,70.35,eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et
+23/08/2022,81.8,risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl
+10/05/2023,66.71,potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi
+09/10/2022,96.88,blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices
+27/01/2023,90.47,mi in porttitor pede justo eu massa donec dapibus duis at velit
+19/07/2022,96.62,ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam
+11/04/2023,67.41,integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis
+17/02/2023,69.4,purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at
+23/03/2023,40.09,primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi
+07/10/2022,94.92,cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi
+23/01/2023,55.08,elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non
+01/09/2022,89.4,eleifend quam a odio in hac habitasse platea dictumst maecenas
+22/11/2022,71.31,enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh
+10/05/2023,87.02,phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit
+22/11/2022,38.92,in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero
+12/11/2022,67.24,leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor
+15/08/2022,6.9,vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis
+23/01/2023,82.7,in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum
+11/09/2022,23.21,tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut
+22/05/2023,92.78,dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam
+25/03/2023,75.44,urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras
+08/01/2023,64.42,justo nec condimentum neque sapien placerat ante nulla justo aliquam quis
+17/07/2022,41.09,consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor
+13/10/2022,11.14,orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem
+03/02/2023,35.88,nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam
+25/09/2022,63.06,amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris
+23/06/2022,15.85,nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras
+28/11/2022,7.1,adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc
+09/11/2022,64.23,sit amet diam in magna bibendum imperdiet nullam orci pede venenatis
+10/10/2022,39.51,ac consequat metus sapien ut nunc vestibulum ante ipsum primis
+30/01/2023,17.22,eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum
+18/08/2022,89.0,sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend
+11/02/2023,82.24,elementum ligula vehicula consequat morbi a ipsum integer a nibh in
+01/05/2023,61.88,vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus
+23/04/2023,50.69,vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula
+20/04/2023,16.6,in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero
+21/03/2023,73.35,justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique
+09/01/2023,29.0,orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt
+18/11/2022,18.36,dui nec nisi volutpat eleifend donec ut dolor morbi vel
+30/05/2023,43.2,a pede posuere nonummy integer non velit donec diam neque vestibulum eget
+27/07/2022,24.1,orci luctus et ultrices posuere cubilia curae duis faucibus accumsan
+15/10/2022,75.94,velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque
+29/08/2022,29.66,nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id consequat in
+13/09/2022,85.72,amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam
+23/07/2022,24.49,viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis
+01/09/2022,96.32,malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing
+26/10/2022,9.08,nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem
+13/01/2023,37.56,bibendum morbi non quam nec dui luctus rutrum nulla tellus
+21/04/2023,29.37,potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis
+13/06/2022,51.44,accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis
+02/10/2022,85.01,turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci
+22/05/2023,67.33,nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit
+21/04/2023,90.78,eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus
+02/01/2023,73.49,justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit
+05/01/2023,40.12,montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient
+16/06/2022,51.11,pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla
+21/05/2023,78.77,amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus
+03/10/2022,95.24,ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non
+08/07/2022,25.59,pede morbi porttitor lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus
+06/10/2022,91.97,sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum
+31/03/2023,19.11,mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin
+11/06/2023,13.15,a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis
+24/02/2023,54.85,posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum
+17/12/2022,33.58,nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere
+23/02/2023,8.38,vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+28/12/2022,22.89,suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula
+04/08/2022,22.33,faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam
+23/07/2022,27.13,urna ut tellus nulla ut erat id mauris vulputate elementum
+08/06/2023,84.1,eget congue eget semper rutrum nulla nunc purus phasellus in
+10/01/2023,13.49,nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a
+04/06/2023,79.3,lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis
+26/11/2022,89.85,vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula
+24/09/2022,4.1,nulla suspendisse potenti cras in purus eu magna vulputate luctus
+10/10/2022,2.12,ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non
+28/03/2023,50.66,quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin
+09/08/2022,74.99,in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus
+07/02/2023,34.58,non pretium quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse
+29/11/2022,33.04,ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus
+11/01/2023,68.56,quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci
+27/10/2022,25.73,in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar
+16/07/2022,24.93,sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae
+06/08/2022,62.51,erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec
+07/06/2023,62.95,ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus
+02/09/2022,32.17,nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede
+27/09/2022,11.29,sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer
+24/07/2022,79.44,hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt
+15/01/2023,82.25,donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque
+06/05/2023,31.81,nulla nunc purus phasellus in felis donec semper sapien a libero nam
+21/07/2022,58.7,metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+17/06/2022,33.98,sapien urna pretium nisl ut volutpat sapien arcu sed augue
+26/05/2023,52.54,luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat
+01/10/2022,9.49,lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla
+26/08/2022,35.77,amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum
+19/03/2023,97.36,rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan
+25/12/2022,91.01,vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in
+15/03/2023,65.88,ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor
+01/07/2022,37.55,quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor eu
