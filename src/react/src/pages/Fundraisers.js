@@ -6,6 +6,7 @@ import PopUp from "../components/PopUp";
 import axios from "axios";
 import "./Fundraisers.css";
 import useUserRoleStatus from "../hooks/useUserRoleStatus";
+import ProgressBar from "../components/ProgressBar";
 
 const Fundraisers = (props) => {
   const isLoggedIn = useLoginStatus()
@@ -53,16 +54,21 @@ const Fundraisers = (props) => {
         {helpGroups.map((group, arrayID) => 
         <>
           <div className="fundraisers-it">
-            <span className="fundraisers-it-txt-30">Group poverty: {group.povertyLevel}</span>
-            <span className="fundraisers-it-txt-30">Monetary Goal: {group.monetaryGoal}</span>
-            <span className="fundraisers-it-txt-30">Finish Date: {group.finishDate}</span>
+            <span className="fundraisers-it-txt-50">Group Poverty: {group.povertyLevel}</span>
+            <span className="fundraisers-it-txt-50">Finish Date: {group.finishDate}</span>
+            <span className="fundraisers-it-txt-100">Monetary Goal: {group.monetaryGoal}$</span>
+            <ProgressBar completed={group.goalPercentage}/>
             <span className="fundraisers-it-txt-100">
                 Donations: <select className="donations-select">
-                {group.donations.map(donation => <option>{donation.date} {donation.amount}, from: {donation.donator}</option>)}
+                {group.donations.map(donation => <option>{donation.date} {donation.amount+'$'}, from: {donation.donator}</option>)}
               </select>
             </span>
-            <span className="fundraisers-it-txt-100">Product: {group.needs?.product}  x{group.needs?.count}</span>
-            <span className="fundraisers-it-txt-50">Caretaker: {group.caretaker?.fullName} </span>
+            <span className="fundraisers-it-txt-100">
+                Products: <select className="donations-select">
+                {group.needs.map(need => <option>{need.product}  x{need.count}</option>)}
+              </select>
+            </span>
+            <span className="fundraisers-it-txt-50">Caretaker: {group.caretaker? group.caretaker.fullName +' ✔️' : 'Currently no caretaker ❌'} </span>
           </div>
         </>
         )}

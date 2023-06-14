@@ -102,22 +102,26 @@ def profile(personId):
 def fundraisers():
     if request.method == 'GET':
         try:
-            helpGroups = db.select_all("help_group")
+            helpGroups = db.select_n("help_group",100)
             helpGroupsInfo = []
             for group in helpGroups:
-                groupInfo = {'groupId':group[0], 'monetaryGoal': group[1],'finishDate': group[2],'povertyLevel':group[3],}
+                groupInfo = {'groupId':group[0], 'monetaryGoal': group[1],'finishDate': group[2].strftime('%m-%d-%Y'),'povertyLevel':group[3],}
 
-                needs = db.select_id("needs",group[0])
-                if needs != None:
-                    product = db.select_id("product",needs[0])
-                    if product != None:
-                        groupInfo['needs'] = {
-                            'product':product[1],
-                            'price':product[2],
-                            'count':needs[1]
-                        }
-
+                needsInfo = []
+                needs = db.select_all_ref_id("needs","help_group",group[0])
+                for _needs in needs:
+                    if _needs != None:
+                        product = db.select_id("product",_needs[0])
+                        if product != None:
+                            needsInfo.append( {
+                                'product':product[1],
+                                'price':product[2],
+                                'count':_needs[1]
+                            } )
+                groupInfo['needs'] = needsInfo
+                
                 donationsInfo = []
+                donationsSum = 0.0
                 donations = db.select_all_ref_id("donation","help_group",group[0])
                 for donation in donations:
                     if donation != None:
@@ -125,6 +129,7 @@ def fundraisers():
                         if donor != None:
                             donorPerson = db.select_ref_id("person","donor",donor[0])
                             if donorPerson != None:
+                                donationsSum += round(donation[2],2)
                                 donationsInfo.append( {
                                     'date':donation[1].strftime('%m-%d-%Y'),
                                     'amount':donation[2],
@@ -132,6 +137,7 @@ def fundraisers():
                                     'donator': " ".join((donorPerson[2],donorPerson[3]))
                                 } )
                 groupInfo['donations'] = donationsInfo
+                groupInfo['goalPercentage'] = round( 100 * round(donationsSum,2) / round(group[1],2), 2)
 
                 if group[4] != None:
                     caretaker = db.select_id("caretaker",group[4])

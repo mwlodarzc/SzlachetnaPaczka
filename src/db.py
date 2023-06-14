@@ -59,13 +59,13 @@ class Database:
         self.connector.commit()
         return tmp
     
-    # def select_id_n(self, table: str, id: int, n: int) -> tuple:
-    #     cursor = self.connector.cursor()
-    #     cursor.execute(f"SELECT {n} FROM {table};")
-    #     tmp = cursor.fetchall()
-    #     cursor.close()
-    #     self.connector.commit()
-    #     return tmp
+    def select_n(self, table: str, n: int) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table} ORDER BY {table}_id ASC LIMIT {n}")
+        tmp = cursor.fetchall()
+        cursor.close()
+        self.connector.commit()
+        return tmp
     
     def select_all_id(self, table: str, id: int) -> tuple:
         cursor = self.connector.cursor()
