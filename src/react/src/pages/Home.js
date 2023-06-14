@@ -17,7 +17,7 @@ const Home = (props) => {
     <>
       <img className="home-bg" alt=""/>
       <h1 className="home-h1">Welcome to our <br/> Website!</h1>
-      <h2 className="home-h2-1"> Help people who need it the most by donating one of many families from our portal, funds and gifts will be delivered by our professional caretakers. </h2>
+      <h2 className="home-h2-1">Help people who need it the most by donating one of many families from our portal, gifts will be delivered by caretakers verified by our service. You may also apply for a caretaker yourself. Enjoy! </h2>
       </>
   );
 };

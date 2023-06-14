@@ -38,13 +38,13 @@ const Fundraisers = (props) => {
   },[helpGroups])
 
   return (
-  <div className="wrap-teams">
+  <div className="wrap-fundraisers">
     {isLoggedIn ? (
       <>
-        <h1 className="teams-h1">Available fundraisers</h1>
+        <h1 className="fundraisers-h1">Available fundraisers</h1>
         {showPopUp ? (
         <PopUp setShow={setShowPopUp} defaultBtnText="Ok">
-          <h1 className="teams-popup-h1">Add Team info</h1>
+          <h1 className="fundraisers-popup-h1">Add Team info</h1>
           <span>
             {popUpMessage}
           </span>
@@ -52,12 +52,17 @@ const Fundraisers = (props) => {
 
         {helpGroups.map((group, arrayID) => 
         <>
-          <div className="teams-it">
-            <span className="teams-it-txt-100">Group poverty: {group.povertyLevel}</span>
-            <span className="teams-it-txt-100">Last donation: {group.donation.date} {group.donation.note}, from: {group.donation.donator}</span>
-            <span className="teams-it-txt-100">Product: {group.needs.product}  x{group.needs.count}</span>
-            <span className="teams-it-txt-50">Caretaker: {group.caretaker.fullName} </span>
-            <span className="teams-it-txt-50">Active Hours: {group.caretaker.activeHoursStart}-{group.caretaker.activeHoursEnd}</span>
+          <div className="fundraisers-it">
+            <span className="fundraisers-it-txt-30">Group poverty: {group.povertyLevel}</span>
+            <span className="fundraisers-it-txt-30">Monetary Goal: {group.monetaryGoal}</span>
+            <span className="fundraisers-it-txt-30">Finish Date: {group.finishDate}</span>
+            <span className="fundraisers-it-txt-100">
+                Donations: <select className="donations-select">
+                {group.donations.map(donation => <option>{donation.date} {donation.amount}, from: {donation.donator}</option>)}
+              </select>
+            </span>
+            <span className="fundraisers-it-txt-100">Product: {group.needs?.product}  x{group.needs?.count}</span>
+            <span className="fundraisers-it-txt-50">Caretaker: {group.caretaker?.fullName} </span>
           </div>
         </>
         )}

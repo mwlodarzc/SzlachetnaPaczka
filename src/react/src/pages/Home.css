@@ -34,7 +34,7 @@
     width: calc(18vw + 18vh);
     height: auto;
     justify-content: center;
-    text-align: start;
+    text-align: justify;
     align-content: center;
     font-size: calc(1vw + 1.2vh);
     color: var(--black);

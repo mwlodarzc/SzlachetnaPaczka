@@ -1,4 +1,4 @@
-.wrap-teams {
+.wrap-fundraisers {
     height: auto;
     width: 900px;
     display: inline-flex;
@@ -15,12 +15,12 @@
     padding: 2%;
 }
 
-.teams-h1 {
+.fundraisers-h1 {
     color: var(--white);
     margin-bottom: 2%;
 }
 
-.teams-it {
+.fundraisers-it {
     box-shadow: 2px -2px 6px var(--green);
     background-color: var(--green-lighter);
     border-radius: 8px;
@@ -38,7 +38,7 @@
     flex-wrap: wrap;
 }
 
-.teams-it-txt-30 {
+.fundraisers-it-txt-30 {
     margin: 10px 15px;
     width: 28%;
     font-size: 22px;
@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.teams-it-txt-50 {
+.fundraisers-it-txt-50 {
     margin: 10px 15px;
     width: 45%;
     font-size: 22px;
@@ -56,7 +56,7 @@
     text-align: center;
 }
 
-.teams-it-txt-100 {
+.fundraisers-it-txt-100 {
     margin: 10px 15px;
     width: 95%;
     font-size: 22px;
@@ -65,7 +65,21 @@
     text-align: center;
 }
 
-.btns-teams {
+.donations-select {
+    background-color: var(--green-lighter);
+    border-radius: 4px;
+    border: 1px solid var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.btns-fundraisers {
     align-items: last baseline;
     align-content: last baseline;
 }

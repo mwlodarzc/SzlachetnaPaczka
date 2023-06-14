@@ -12,7 +12,7 @@ class Database:
 
         self.connector = psycopg2.connect(**params)
         cursor = self.connector.cursor()
-        cursor.execute(open("src/drop.sql", "r").read())
+        # cursor.execute(open("src/drop.sql", "r").read())
         cursor.execute("SET datestyle TO 'ISO, DMY';")
         cursor.execute(open("src/init.sql", "r").read())
         cursor.close()
@@ -43,14 +43,6 @@ class Database:
         self.connector.commit()
         return tmp
     
-    def select_all(self, table: str) -> tuple:
-        cursor = self.connector.cursor()
-        cursor.execute(f"SELECT * FROM {table};")
-        tmp = cursor.fetchall()
-        cursor.close()
-        self.connector.commit()
-        return tmp
-    
     def select_ref_id(self, table: str, refTable: str, refId: int) -> tuple:
         cursor = self.connector.cursor()
         cursor.execute(f"SELECT * FROM {table} WHERE {table}_{refTable}_ref_id={refId}")
@@ -63,6 +55,38 @@ class Database:
         cursor = self.connector.cursor()
         cursor.execute(f"SELECT * FROM user_data WHERE email_address='{email_address}' AND password_hash='{password_hash}'")
         tmp = cursor.fetchone()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
+    # def select_id_n(self, table: str, id: int, n: int) -> tuple:
+    #     cursor = self.connector.cursor()
+    #     cursor.execute(f"SELECT {n} FROM {table};")
+    #     tmp = cursor.fetchall()
+    #     cursor.close()
+    #     self.connector.commit()
+    #     return tmp
+    
+    def select_all_id(self, table: str, id: int) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table} WHERE {table}_id={id};")
+        tmp = cursor.fetchall()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
+    def select_all_ref_id(self, table: str, refTable: str, refId: int) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table} WHERE {table}_{refTable}_ref_id={refId};")
+        tmp = cursor.fetchall()
+        cursor.close()
+        self.connector.commit()
+        return tmp
+    
+    def select_all(self, table: str) -> tuple:
+        cursor = self.connector.cursor()
+        cursor.execute(f"SELECT * FROM {table};")
+        tmp = cursor.fetchall()
         cursor.close()
         self.connector.commit()
         return tmp

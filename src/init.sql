@@ -39,15 +39,12 @@ CREATE TABLE IF NOT EXISTS product(
     price money NOT NULL
 );
 
-
 CREATE TABLE IF NOT EXISTS needs(
     needs_id BIGSERIAL PRIMARY KEY,
     count INT NOT NULL,
     needs_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
     needs_products_ref_id BIGINT REFERENCES product(product_id)
 );
-
-
 
 CREATE TABLE IF NOT EXISTS donation(
     donation_id BIGSERIAL PRIMARY KEY,
