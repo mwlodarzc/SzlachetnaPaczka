@@ -34,6 +34,19 @@ const Fundraisers = (props) => {
     // setEditTeamID(-1)
   }
 
+  const takeCare = (groupId) => {
+    axios
+      .put(`http://127.0.0.1:5000/fundraisers/help-group/${groupId}/caretaker/${personId[0]}`)
+      .then((res) => {
+        setPopUpMessage("Success. You have taken care of chosen group, track 'Your Groups' to learn more.")
+        setShowPopUp(true)
+      })
+      .catch((err) => {
+        setPopUpMessage("Error. You haven't taken care of chosen group due to unexpected error.")
+        setShowPopUp(true)
+      });
+  }
+
   useEffect(() => {
     console.log(helpGroups)
   },[helpGroups])
@@ -45,13 +58,13 @@ const Fundraisers = (props) => {
         <h1 className="fundraisers-h1">Available fundraisers</h1>
         {showPopUp ? (
         <PopUp setShow={setShowPopUp} defaultBtnText="Ok">
-          <h1 className="fundraisers-popup-h1">Add Team info</h1>
+          <h1 className="fundraisers-popup-h1">Help group information</h1>
           <span>
             {popUpMessage}
           </span>
         </PopUp>):(<></>)}
 
-        {helpGroups.map((group, arrayID) => 
+        {helpGroups.map((group) => 
         <>
           <div className="fundraisers-it">
             <span className="fundraisers-it-txt-50">Group Poverty: {group.povertyLevel}</span>
@@ -69,6 +82,15 @@ const Fundraisers = (props) => {
               </select>
             </span>
             <span className="fundraisers-it-txt-50">Caretaker: {group.caretaker? group.caretaker.fullName +' ✔️' : 'Currently no caretaker ❌'} </span>
+            
+            {!group.caretaker && isUserCaretaker ? (
+            <div className="fundraisers-it-txt-50">
+            Take care of this group
+            <button className="btn-take-care" onClick={() => takeCare(group.groupId)}>
+              <i class="fa-solid fa-hands-holding-child"></i>
+            </button>
+            </div>) : (<></>)}
+
           </div>
         </>
         )}

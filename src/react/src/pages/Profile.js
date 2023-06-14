@@ -47,6 +47,8 @@ const Profile = () => {
     window.location.reload();
   };
 
+  useEffect(()=>console.log(profile),[profile])
+
   return (
     <div className="wrap-profile">
       {profile ? (
@@ -111,15 +113,9 @@ const Profile = () => {
             {isUserDonor ? (
             <>
               <div className="profile-it">
-                <span className="profile-it-txt">Donated packs</span>
-                <span className="profile-it-txt">
-                  {profile.packCount}
-                </span>
-              </div>
-              <div className="profile-it">
                 <span className="profile-it-txt">Donations sum</span>
                 <span className="profile-it-txt">
-                  {profile.donationsSum}
+                  {profile.donationsSum+' $'}
                 </span>
               </div>
               <div className="profile-it">
@@ -133,21 +129,15 @@ const Profile = () => {
             {isUserCaretaker ? (
             <>
               <div className="profile-it">
-                <span className="profile-it-txt">Donation Place</span>
+                <span className="profile-it-txt">Verified</span>
                 <span className="profile-it-txt">
-                  {profile.donationPlace}
+                  {profile.verified ? '✔️' : '❌'}
                 </span>
               </div>
               <div className="profile-it">
                 <span className="profile-it-txt">Owns a car</span>
                 <span className="profile-it-txt">
-                  {profile.carOwner}
-                </span>
-              </div>
-              <div className="profile-it">
-                <span className="profile-it-txt">Active Hours</span>
-                <span className="profile-it-txt">
-                  {profile.activeHoursStart}-{profile.activeHoursStart}
+                  {profile.carOwner ? '✔️' : '❌'}
                 </span>
               </div>
             </>):(<></>)}

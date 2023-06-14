@@ -83,3 +83,12 @@
     align-items: last baseline;
     align-content: last baseline;
 }
+
+.btn-take-care {
+    margin-left: 10px;
+    font-size: 21px;
+    color: var(--white);
+    background-color: var(--green-lighter);
+    border: none;
+    cursor: pointer;
+}

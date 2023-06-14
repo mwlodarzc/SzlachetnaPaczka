@@ -73,6 +73,7 @@ def profile(personId):
 
             if person[6] == None:
                 caretaker = db.select_id("caretaker",person[8])
+                # db.update('caretaker',caretaker[0],verified=True)
                 userInfo['verified'] = caretaker[1] if caretaker[1] != None else ''
                 userInfo['carOwner'] = caretaker[2] if caretaker[2] != None else ''
             else:
@@ -91,7 +92,7 @@ def profile(personId):
 
             # todo -> update user, update donor, update caretaker
 
-            return make_response(jsonify(xd="xd"),200)
+            return make_response(jsonify(message="PUT request accepted",success=True),200)
         except Exception as e:
             print(e)
             return make_response(jsonify(message="Error edit profile",success=False),401)
@@ -155,6 +156,18 @@ def fundraisers():
             return make_response(jsonify(message="Error profile",success=False),401)
     else:
         return make_response(jsonify(message="PUT request not returned",success=False),401)
+    
+@app.route("/fundraisers/help-group/<groupId>/caretaker/<personId>", methods=['PUT'])
+def fundraisers_put(groupId,personId):
+    if request.method == 'PUT':
+        try:
+            person = db.select_id("person",personId)
+            caretaker = db.select_id("caretaker",person[8])
+            db.update('help_group',groupId,help_group_caretaker_ref_id=caretaker[0])
+            return make_response(jsonify(message="PUT request accepted",success=True),200)
+        except Exception as e:
+            print(e)
+            return make_response(jsonify(message="Error taking care",success=False),401)
 
 if __name__ == "__main__":
     app.run(port=5000,debug=True)
