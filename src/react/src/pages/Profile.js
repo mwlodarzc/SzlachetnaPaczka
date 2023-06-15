@@ -47,8 +47,6 @@ const Profile = () => {
     window.location.reload();
   };
 
-  useEffect(()=>console.log(profile),[profile])
-
   return (
     <div className="wrap-profile">
       {profile ? (

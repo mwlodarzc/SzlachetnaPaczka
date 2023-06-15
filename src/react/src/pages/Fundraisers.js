@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useLoginStatus from "../hooks/useLoginStatus";
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -19,6 +20,15 @@ const Fundraisers = (props) => {
 
   const [helpGroups, setHelpGroups] = useState([])
 
+  const [editKey, setEditKey] = useState(-1)
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+    reset,
+  } = useForm();
+
   useEffect(() => {
     axios
         .get("http://127.0.0.1:5000/fundraisers")
@@ -26,13 +36,7 @@ const Fundraisers = (props) => {
           setHelpGroups(res.data.helpGroups)
         })
         .catch((err) => console.log(err));
-  },[isLoggedIn,showPopUp])
-
-  const updatePopUpMessage = (popUpMsg) => {
-    setPopUpMessage(popUpMsg)
-    setShowPopUp(true);
-    // setEditTeamID(-1)
-  }
+  },[isLoggedIn,showPopUp,editKey])
 
   const takeCare = (groupId) => {
     axios
@@ -44,6 +48,22 @@ const Fundraisers = (props) => {
       .catch((err) => {
         setPopUpMessage("Error. You haven't taken care of chosen group due to unexpected error.")
         setShowPopUp(true)
+      });
+  }
+
+  const donate = (data, groupId) => {
+    reset()
+    axios
+      .post(`http://127.0.0.1:5000/fundraisers/help-group/${groupId}/donor/${personId[0]}`,data)
+      .then((res) => {
+        setPopUpMessage("Success. You have donated chosen group. Thank you!")
+        setShowPopUp(true)
+        setEditKey(-1)
+      })
+      .catch((err) => {
+        setPopUpMessage("Error. You haven't donated chosen group due to unexpected error.")
+        setShowPopUp(true)
+        setEditKey(-1)
       });
   }
 
@@ -60,7 +80,7 @@ const Fundraisers = (props) => {
           </span>
         </PopUp>):(<></>)}
 
-        {helpGroups.map((group) => 
+        {helpGroups.map((group,key) => 
         <>
           <div className="fundraisers-it">
             <span className="fundraisers-it-txt-50">Group Poverty: {group.povertyLevel}</span>
@@ -86,6 +106,30 @@ const Fundraisers = (props) => {
               <i class="fa-solid fa-hands-holding-child"></i>
             </button>
             </div>) : (<></>)}
+
+            {isUserDonor ? (
+            <>
+            {key === editKey ? (
+              <form onSubmit={handleSubmit(e => donate(e,group.groupId))}>
+                  <span className="fundraisers-it-txt-50">
+                    <input className="donate-input" type="number" min="1" max="999"
+                    {...register("amount", {
+                      required: true,
+                    })}
+                    />$
+                    <button className="btn-donate" type="submit">
+                      <i className="fa-solid fa-check"></i>
+                    </button>
+                  </span>
+              </form>):(
+                <div className="fundraisers-it-txt-50">
+                Donate this group
+                  <button className="btn-take-care" onClick={() => setEditKey(key)}>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                  </button>
+                </div>
+              )}
+            </>) : (<></>)}
 
           </div>
         </>

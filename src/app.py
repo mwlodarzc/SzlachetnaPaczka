@@ -18,9 +18,8 @@ db = Database()
 if db.is_empty('person'):
     MockData.load(db)
 
-# BACKEND DISABLED
-# # todo 
-# # email sie powtarza z innym w bazie + ewentualnie telefon
+POINTS_MULTIPLIERS = {'low':3,'mid':4,'high':5}
+
 @app.route("/signup", methods=['POST'])
 def sign_up():
     if request.method == 'POST':
@@ -126,7 +125,7 @@ def fundraisers():
                 donations = db.select_all_ref_id("donation","help_group",group[0])
                 for donation in donations:
                     if donation != None:
-                        donor = db.select_id("donor",donation[5])
+                        donor = db.select_id("donor",donation[4])
                         if donor != None:
                             donorPerson = db.select_ref_id("person","donor",donor[0])
                             if donorPerson != None:
@@ -164,6 +163,23 @@ def fundraisers_put(groupId,personId):
             person = db.select_id("person",personId)
             caretaker = db.select_id("caretaker",person[8])
             db.update('help_group',groupId,help_group_caretaker_ref_id=caretaker[0])
+            return make_response(jsonify(message="PUT request accepted",success=True),200)
+        except Exception as e:
+            print(e)
+            return make_response(jsonify(message="Error taking care",success=False),401)
+        
+@app.route("/fundraisers/help-group/<groupId>/donor/<personId>", methods=['POST'])
+def fundraisers_post(groupId,personId):
+    if request.method == 'POST':
+        data = json.loads(request.data)
+        try:
+            person = db.select_id("person",personId)
+            donor = db.select_id("donor",person[6])
+            donationId = db.add_donation("2023-06-06",float(data['amount']),'')
+            group = db.select_id('help_group',groupId)
+            db.update('donor',donor[0], donations_sum = float(data['amount']) + donor[1], points=float(data['amount']) * POINTS_MULTIPLIERS[group[3]])
+            db.update('donation',donationId,donation_donor_ref_id=donor[0],donation_help_group_ref_id=groupId)
+
             return make_response(jsonify(message="PUT request accepted",success=True),200)
         except Exception as e:
             print(e)

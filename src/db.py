@@ -156,20 +156,6 @@ class Database:
         self.connector.commit()
         cur.close()
         return tmp
-    
-    # def add_caretaker_empty(
-    #     self,
-    # ):
-    #     verified = car_owner = False
-    #     cur = self.connector.cursor()
-    #     cur.execute(
-    #         "INSERT INTO caretaker (verified, car_owner) VALUES (%s,%s) RETURNING caretaker_id;",
-    #         [verified, car_owner],
-    #     )
-    #     tmp = cur.fetchone()[0]
-    #     self.connector.commit()
-    #     cur.close()
-    #     return tmp
 
     def add_help_group(self, monetary_goal: str, finish_date:str, poverty_level: str):
         cur = self.connector.cursor()
