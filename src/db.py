@@ -106,9 +106,15 @@ class Database:
         cursor.close()
         self.connector.commit()
 
-    def delete(self, table: str, id: int):
+    def delete_id(self, table: str, id: int):
         cursor = self.connector.cursor()
         cursor.execute(f"DELETE FROM {table} WHERE {table}_id = {id};")
+        cursor.close()
+        self.connector.commit()
+
+    def delete_ref_id(self, table: str, refTable: str, refId: int):
+        cursor = self.connector.cursor()
+        cursor.execute(f"DELETE FROM {table} WHERE {table}_{refTable}_ref_id={refId};")
         cursor.close()
         self.connector.commit()
 

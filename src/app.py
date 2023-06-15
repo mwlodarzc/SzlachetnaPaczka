@@ -169,6 +169,82 @@ def fundraisers_put(groupId,personId):
             print(e)
             return make_response(jsonify(message="Error taking care",success=False),401)
 
+@app.route("/your-help-groups/<personId>", methods=['GET'])
+def your_help_groups(personId):
+    if request.method == 'GET':
+        try:
+            person = db.select_id("person",personId)
+            caretaker = db.select_id("caretaker",person[8])
+            yourHelpGroups = db.select_all_ref_id("help_group","caretaker",caretaker[0])
+
+            helpGroupsInfo = []
+            for group in yourHelpGroups:
+                groupInfo = {'groupId':group[0], 'monetaryGoal': group[1],'finishDate': group[2].strftime('%m-%d-%Y'),'povertyLevel':group[3],}
+
+                needsInfo = []
+                needs = db.select_all_ref_id("needs","help_group",group[0])
+                for _needs in needs:
+                    if _needs != None:
+                        product = db.select_id("product",_needs[0])
+                        if product != None:
+                            needsInfo.append( {
+                                'product':product[1],
+                                'price':product[2],
+                                'count':_needs[1]
+                            } )
+                groupInfo['needs'] = needsInfo
+                
+                donationsInfo = []
+                donationsSum = 0.0
+                donations = db.select_all_ref_id("donation","help_group",group[0])
+                for donation in donations:
+                    if donation != None:
+                        donor = db.select_id("donor",donation[5])
+                        if donor != None:
+                            donorPerson = db.select_ref_id("person","donor",donor[0])
+                            if donorPerson != None:
+                                donationsSum += round(donation[2],2)
+                                donationsInfo.append( {
+                                    'date':donation[1].strftime('%m-%d-%Y'),
+                                    'amount':donation[2],
+                                    'note':donation[3],
+                                    'donator': " ".join((donorPerson[2],donorPerson[3]))
+                                } )
+                groupInfo['donations'] = donationsInfo
+                groupInfo['goalPercentage'] = round( 100 * round(donationsSum,2) / round(group[1],2), 2)
+
+                if group[4] != None:
+                    caretaker = db.select_id("caretaker",group[4])
+                    if caretaker != None:
+                        caretakerPerson = db.select_ref_id("person","caretaker",caretaker[0])
+                        if caretakerPerson != None:
+                            groupInfo['caretaker'] = {
+                                'fullName': " ".join((caretakerPerson[2],caretakerPerson[3]))
+                            }
+
+                helpGroupsInfo.append( groupInfo )
+            
+            return make_response(jsonify(yourHelpGroups = helpGroupsInfo),200)
+        except Exception as e:
+            print(e)
+            return make_response(jsonify(message="Error profile",success=False),401)
+    else:
+        return make_response(jsonify(message="PUT request not returned",success=False),401)
+
+@app.route("/your-help-groups/<groupId>", methods=['DELETE'])
+def your_help_groups_delete(groupId):
+    if request.method == 'DELETE':
+        try:
+            db.delete_ref_id("person","help_group",groupId)
+            db.delete_ref_id("needs","help_group",groupId)
+            db.delete_ref_id("donation","help_group",groupId)
+            db.delete_id("help_group",groupId)
+
+            return make_response(jsonify(message="DELETE request accepted",success=True),200)
+        except Exception as e:
+            print(e)
+            return make_response(jsonify(message="Error confirming",success=False),401)
+
 if __name__ == "__main__":
     app.run(port=5000,debug=True)
     

@@ -20,6 +20,11 @@
     margin-bottom: 2%;
 }
 
+.fundraisers-h2 {
+    color: var(--white);
+    margin-bottom: 2%;
+}
+
 .fundraisers-it {
     box-shadow: 2px -2px 6px var(--green);
     background-color: var(--green-lighter);

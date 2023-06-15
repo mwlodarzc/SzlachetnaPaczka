@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import useLoginStatus from "../hooks/useLoginStatus";
+import useUserRoleStatus from "../hooks/useUserRoleStatus";
 
 const NavBar = (props) => {
   const [isActive, setActive] = useState(false);
   let isLoggedIn = useLoginStatus()
+  let isUserCaretaker = useUserRoleStatus("caretaker")
 
   useEffect(() => {
     window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
@@ -34,6 +36,11 @@ const NavBar = (props) => {
             <li>
               <Link onClick={hideBurger} to="/Fundraisers">Fundraisers</Link>
             </li>
+            {isUserCaretaker ? (
+              <li>
+              <Link onClick={hideBurger} to="/Your-Helpgroups">Your Helpgroups</Link>
+            </li>
+            ) :(<></>)}
             <li>
               <Link onClick={hideBurger} to="/users/profile">Profile</Link>
             </li>

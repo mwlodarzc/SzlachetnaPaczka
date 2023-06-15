@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS help_group(
     monetary_goal FLOAT,
     finish_date DATE NOT NULL,
     poverty_level LEVEL NOT NULL,
-    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id)
+    help_group_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) on delete cascade on update cascade
 );
 
 CREATE TABLE IF NOT EXISTS product(
@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS product(
 CREATE TABLE IF NOT EXISTS needs(
     needs_id BIGSERIAL PRIMARY KEY,
     count INT NOT NULL,
-    needs_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
-    needs_products_ref_id BIGINT REFERENCES product(product_id)
+    needs_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) on delete cascade on update cascade,
+    needs_products_ref_id BIGINT REFERENCES product(product_id) on delete cascade on update cascade
 );
 
 CREATE TABLE IF NOT EXISTS donation(
@@ -51,8 +51,8 @@ CREATE TABLE IF NOT EXISTS donation(
     "date" DATE NOT NULL,
     amount FLOAT NOT NULL,
     note TEXT NOT NULL,
-    donation_donor_ref_id BIGINT REFERENCES donor(donor_id),
-    donation_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) NULL
+    donation_donor_ref_id BIGINT REFERENCES donor(donor_id) on delete cascade on update cascade,
+    donation_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) on delete cascade on update cascade NULL 
 );
 
 CREATE TABLE IF NOT EXISTS person(
@@ -62,8 +62,8 @@ CREATE TABLE IF NOT EXISTS person(
     surname TEXT NOT NULL,
     address TEXT,
     birth DATE,
-    person_donor_ref_id BIGINT REFERENCES donor(donor_id),
-    person_help_group_ref_id BIGINT REFERENCES help_group(help_group_id),
-    person_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) UNIQUE,
-    person_user_data_ref_id BIGINT REFERENCES user_data(user_data_id) UNIQUE
+    person_donor_ref_id BIGINT REFERENCES donor(donor_id) on delete cascade on update cascade,
+    person_help_group_ref_id BIGINT REFERENCES help_group(help_group_id) on delete cascade on update cascade,
+    person_caretaker_ref_id BIGINT REFERENCES caretaker(caretaker_id) on delete cascade on update cascade UNIQUE,
+    person_user_data_ref_id BIGINT REFERENCES user_data(user_data_id) on delete cascade on update cascade UNIQUE
 );

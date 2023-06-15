@@ -8,50 +8,49 @@ import "./Fundraisers.css";
 import useUserRoleStatus from "../hooks/useUserRoleStatus";
 import ProgressBar from "../components/ProgressBar";
 
-const Fundraisers = (props) => {
+const YourHelpGroups = (props) => {
   const isLoggedIn = useLoginStatus()
   let personId = useLocalStorage("personId")
-  let isUserDonor = useUserRoleStatus("donor")
   let isUserCaretaker = useUserRoleStatus("caretaker")
 
   const [showPopUp, setShowPopUp] = useState(false);
   const [popUpMessage, setPopUpMessage] = useState("")
 
-  const [helpGroups, setHelpGroups] = useState([])
+  const [yourHelpGroups, setYourHelpGroups] = useState([])
 
   useEffect(() => {
     axios
-        .get("http://127.0.0.1:5000/fundraisers")
+        .get(`http://127.0.0.1:5000/your-help-groups/${personId[0]}`)
         .then((res) => {
-          setHelpGroups(res.data.helpGroups)
+          setYourHelpGroups(res.data.yourHelpGroups)
         })
         .catch((err) => console.log(err));
   },[isLoggedIn,showPopUp])
 
-  const updatePopUpMessage = (popUpMsg) => {
-    setPopUpMessage(popUpMsg)
-    setShowPopUp(true);
-    // setEditTeamID(-1)
-  }
-
-  const takeCare = (groupId) => {
+  const confirm = (groupId, goalPerc) => {
+    // if(goalPerc < 100.0){
+    //     setPopUpMessage("Error. Process couldn't been ended, insufficient funds collected.")
+    //     setShowPopUp(true)
+    //     return
+    // }
     axios
-      .put(`http://127.0.0.1:5000/fundraisers/help-group/${groupId}/caretaker/${personId[0]}`)
+      .delete(`http://127.0.0.1:5000/your-help-groups/${groupId}`)
       .then((res) => {
-        setPopUpMessage("Success. You have taken care of chosen group, track 'Your Helpgroups' to learn more.")
+        setPopUpMessage("Success. Process has been ended.")
         setShowPopUp(true)
       })
       .catch((err) => {
-        setPopUpMessage("Error. You haven't taken care of chosen group due to unexpected error.")
+        setPopUpMessage("Error. Process couldn't been ended.")
         setShowPopUp(true)
       });
   }
 
   return (
   <div className="wrap-fundraisers">
-    {isLoggedIn ? (
+    {isLoggedIn && isUserCaretaker ? (
       <>
-        <h1 className="fundraisers-h1">Available fundraisers</h1>
+        <h1 className="fundraisers-h1">Your Helpgroups</h1>
+        <h2 className="fundraisers-h2">Keep track of monetary goal of each group, when one is fulfilled you will have to withdraw the money from our system, buy products that are listed in the fundraiser and deliver them to the Helpgroup. When finished confirm that process has been ended and Helpgroup will be no longer in the system.</h2>
         {showPopUp ? (
         <PopUp setShow={setShowPopUp} defaultBtnText="Ok">
           <h1 className="fundraisers-popup-h1">Help group information</h1>
@@ -60,7 +59,7 @@ const Fundraisers = (props) => {
           </span>
         </PopUp>):(<></>)}
 
-        {helpGroups.map((group) => 
+        {yourHelpGroups.map((group) => 
         <>
           <div className="fundraisers-it">
             <span className="fundraisers-it-txt-50">Group Poverty: {group.povertyLevel}</span>
@@ -77,13 +76,13 @@ const Fundraisers = (props) => {
                 {group.needs.map(need => <option>{need.product}  x{need.count}</option>)}
               </select>
             </span>
-            <span className="fundraisers-it-txt-50">Caretaker: {group.caretaker? group.caretaker.fullName +' ✔️' : 'Currently no caretaker ❌'} </span>
-            
-            {!group.caretaker && isUserCaretaker ? (
+            <span className="fundraisers-it-txt-50">Caretaker: You are the caretaker. </span>
+
+            {isUserCaretaker ? (
             <div className="fundraisers-it-txt-50">
-            Take care of this group
-            <button className="btn-take-care" onClick={() => takeCare(group.groupId)}>
-              <i class="fa-solid fa-hands-holding-child"></i>
+            Confirm process has been ended:
+            <button className="btn-take-care" onClick={() => confirm(group.groupId,group.goalPercentage)}>
+                <i className="fa-solid fa-check"></i>
             </button>
             </div>) : (<></>)}
 
@@ -98,4 +97,4 @@ const Fundraisers = (props) => {
   );
 };
 
-export default Fundraisers;
+export default YourHelpGroups;
